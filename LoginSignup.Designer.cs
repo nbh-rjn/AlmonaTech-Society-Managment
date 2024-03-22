@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.uname_lg = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.pword_lg = new System.Windows.Forms.TextBox();
+            this.uname_sn = new System.Windows.Forms.TextBox();
+            this.pword_sn = new System.Windows.Forms.TextBox();
+            this.em_sn = new System.Windows.Forms.TextBox();
+            this.fname_sn = new System.Windows.Forms.TextBox();
+            this.lname_sn = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,9 +47,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.ldbtn = new System.Windows.Forms.RadioButton();
+            this.mbtn = new System.Windows.Forms.RadioButton();
+            this.mt_btn = new System.Windows.Forms.RadioButton();
             this.login_btn = new System.Windows.Forms.Button();
             this.signup_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -59,12 +59,12 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // uname_lg
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 112);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
+            this.uname_lg.Location = new System.Drawing.Point(155, 112);
+            this.uname_lg.Name = "uname_lg";
+            this.uname_lg.Size = new System.Drawing.Size(100, 22);
+            this.uname_lg.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
@@ -72,47 +72,48 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox2
+            // pword_lg
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 165);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 2;
+            this.pword_lg.Location = new System.Drawing.Point(155, 165);
+            this.pword_lg.Name = "pword_lg";
+            this.pword_lg.Size = new System.Drawing.Size(100, 22);
+            this.pword_lg.TabIndex = 2;
             // 
-            // textBox3
+            // uname_sn
             // 
-            this.textBox3.Location = new System.Drawing.Point(193, 98);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 3;
+            this.uname_sn.Location = new System.Drawing.Point(193, 98);
+            this.uname_sn.Name = "uname_sn";
+            this.uname_sn.Size = new System.Drawing.Size(100, 22);
+            this.uname_sn.TabIndex = 3;
+            this.uname_sn.TextChanged += new System.EventHandler(this.uname_sn_TextChanged);
             // 
-            // textBox4
+            // pword_sn
             // 
-            this.textBox4.Location = new System.Drawing.Point(193, 145);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 4;
+            this.pword_sn.Location = new System.Drawing.Point(193, 145);
+            this.pword_sn.Name = "pword_sn";
+            this.pword_sn.Size = new System.Drawing.Size(100, 22);
+            this.pword_sn.TabIndex = 4;
             // 
-            // textBox5
+            // em_sn
             // 
-            this.textBox5.Location = new System.Drawing.Point(193, 196);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 5;
+            this.em_sn.Location = new System.Drawing.Point(193, 196);
+            this.em_sn.Name = "em_sn";
+            this.em_sn.Size = new System.Drawing.Size(100, 22);
+            this.em_sn.TabIndex = 5;
             // 
-            // textBox6
+            // fname_sn
             // 
-            this.textBox6.Location = new System.Drawing.Point(193, 245);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 6;
+            this.fname_sn.Location = new System.Drawing.Point(193, 245);
+            this.fname_sn.Name = "fname_sn";
+            this.fname_sn.Size = new System.Drawing.Size(100, 22);
+            this.fname_sn.TabIndex = 6;
             // 
-            // textBox7
+            // lname_sn
             // 
-            this.textBox7.Location = new System.Drawing.Point(193, 292);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 7;
+            this.lname_sn.Location = new System.Drawing.Point(193, 292);
+            this.lname_sn.Name = "lname_sn";
+            this.lname_sn.Size = new System.Drawing.Size(100, 22);
+            this.lname_sn.TabIndex = 7;
             // 
             // label1
             // 
@@ -224,44 +225,44 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Role";
             // 
-            // radioButton1
+            // ldbtn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.radioButton1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.radioButton1.Location = new System.Drawing.Point(190, 384);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 22);
-            this.radioButton1.TabIndex = 19;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Lead";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.ldbtn.AutoSize = true;
+            this.ldbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.ldbtn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.ldbtn.Location = new System.Drawing.Point(190, 384);
+            this.ldbtn.Name = "ldbtn";
+            this.ldbtn.Size = new System.Drawing.Size(61, 22);
+            this.ldbtn.TabIndex = 19;
+            this.ldbtn.TabStop = true;
+            this.ldbtn.Text = "Lead";
+            this.ldbtn.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // mbtn
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.radioButton2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.radioButton2.Location = new System.Drawing.Point(190, 356);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(84, 22);
-            this.radioButton2.TabIndex = 20;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Member";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.mbtn.AutoSize = true;
+            this.mbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.mbtn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.mbtn.Location = new System.Drawing.Point(190, 356);
+            this.mbtn.Name = "mbtn";
+            this.mbtn.Size = new System.Drawing.Size(84, 22);
+            this.mbtn.TabIndex = 20;
+            this.mbtn.TabStop = true;
+            this.mbtn.Text = "Member";
+            this.mbtn.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // mt_btn
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.radioButton3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.radioButton3.Location = new System.Drawing.Point(190, 412);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(76, 22);
-            this.radioButton3.TabIndex = 21;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Mentor";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.mt_btn.AutoSize = true;
+            this.mt_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.mt_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.mt_btn.Location = new System.Drawing.Point(190, 412);
+            this.mt_btn.Name = "mt_btn";
+            this.mt_btn.Size = new System.Drawing.Size(76, 22);
+            this.mt_btn.TabIndex = 21;
+            this.mt_btn.TabStop = true;
+            this.mt_btn.Text = "Mentor";
+            this.mt_btn.UseVisualStyleBackColor = true;
             // 
             // login_btn
             // 
@@ -292,11 +293,11 @@
             this.panel1.BackColor = System.Drawing.Color.Azure;
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.uname_lg);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.login_btn);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.pword_lg);
             this.panel1.Location = new System.Drawing.Point(41, 145);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 283);
@@ -314,15 +315,15 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Azure;
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.uname_sn);
             this.panel2.Controls.Add(this.signup_btn);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.radioButton3);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.radioButton1);
-            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.pword_sn);
+            this.panel2.Controls.Add(this.mt_btn);
+            this.panel2.Controls.Add(this.em_sn);
+            this.panel2.Controls.Add(this.mbtn);
+            this.panel2.Controls.Add(this.fname_sn);
+            this.panel2.Controls.Add(this.ldbtn);
+            this.panel2.Controls.Add(this.lname_sn);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label8);
@@ -357,14 +358,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox uname_lg;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox pword_lg;
+        private System.Windows.Forms.TextBox uname_sn;
+        private System.Windows.Forms.TextBox pword_sn;
+        private System.Windows.Forms.TextBox em_sn;
+        private System.Windows.Forms.TextBox fname_sn;
+        private System.Windows.Forms.TextBox lname_sn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -375,9 +376,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton ldbtn;
+        private System.Windows.Forms.RadioButton mbtn;
+        private System.Windows.Forms.RadioButton mt_btn;
         private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.Button signup_btn;
         private System.Windows.Forms.Panel panel1;
