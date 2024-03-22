@@ -52,6 +52,12 @@
     <Compile Include="DisplaySociety.Designer.cs">
       <DependentUpon>DisplaySociety.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEvent.Designer.cs">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginSignup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="DisplayEvent.Designer.cs">
       <DependentUpon>DisplayEvent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateEvent.resx">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DisplaySociety.resx">
       <DependentUpon>DisplaySociety.cs</DependentUpon>
     </EmbeddedResource>
