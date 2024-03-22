@@ -35,7 +35,15 @@
             this.viewsociety_details_btn = new System.Windows.Forms.Button();
             this.viewevents_btn = new System.Windows.Forms.Button();
             this.createevent_btn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.society_name = new System.Windows.Forms.TextBox();
+            this.s_desc = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,6 +95,7 @@
             this.signout_btn.TabIndex = 3;
             this.signout_btn.Text = "Sign Out";
             this.signout_btn.UseVisualStyleBackColor = false;
+            this.signout_btn.Click += new System.EventHandler(this.signout_btn_Click);
             // 
             // viewsociety_details_btn
             // 
@@ -124,17 +133,94 @@
             this.createevent_btn.Text = "Create Event";
             this.createevent_btn.UseVisualStyleBackColor = false;
             // 
-            // Form2
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightBlue;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.s_desc);
+            this.panel2.Controls.Add(this.society_name);
+            this.panel2.Location = new System.Drawing.Point(315, 108);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(400, 421);
+            this.panel2.TabIndex = 2;
+            // 
+            // society_name
+            // 
+            this.society_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.society_name.Location = new System.Drawing.Point(177, 105);
+            this.society_name.Name = "society_name";
+            this.society_name.Size = new System.Drawing.Size(175, 28);
+            this.society_name.TabIndex = 1;
+            // 
+            // s_desc
+            // 
+            this.s_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s_desc.Location = new System.Drawing.Point(177, 189);
+            this.s_desc.Name = "s_desc";
+            this.s_desc.Size = new System.Drawing.Size(175, 96);
+            this.s_desc.TabIndex = 4;
+            this.s_desc.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 109);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 24);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Society Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(32, 224);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 24);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Society Desc";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(260, 339);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 30);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Create";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(71, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(272, 39);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Create A Society";
+            // 
+            // CreateSociety
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 691);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Form2";
+            this.Name = "CreateSociety";
             this.Text = "Create Society";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -148,5 +234,12 @@
         private System.Windows.Forms.Button viewsociety_details_btn;
         private System.Windows.Forms.Button viewevents_btn;
         private System.Windows.Forms.Button createevent_btn;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox s_desc;
+        private System.Windows.Forms.TextBox society_name;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label2;
     }
 }

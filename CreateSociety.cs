@@ -2,24 +2,71 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Common;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Collections;
+
 
 namespace AlmonaTech_Society_Managment
 {
     public partial class CreateSociety : Form
     {
+
+        SqlConnection cn = new SqlConnection();
+        SqlCommand command = new SqlCommand();
+        SqlDataReader dr;
+
+
+        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+
         public CreateSociety()
         {
             InitializeComponent();
+            cn = new SqlConnection(conn);
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e) //create socity button
+        {
+            cn.Open();
+            SqlTransaction transaction = cn.BeginTransaction();
+            string query = "insert into Society (sname,description_)\r\nvalues (@sname, @desc);";//input in socitytable
+
+            SqlCommand cmdSociety = new SqlCommand(query, cn, transaction);
+            cmdSociety.Parameters.AddWithValue("@sname", society_name.Text);
+            cmdSociety.Parameters.AddWithValue("@desc", s_desc.Text);
+
+            cmdSociety.ExecuteNonQuery();
+
+            transaction.Commit();
+
+            MessageBox.Show("Society Creation Successful!");
+            society_name.Text = "";
+            s_desc.Text = "";
+
+            cn.Close();
+        }
+
+        private void signout_btn_Click(object sender, EventArgs e)
+        {
+            LoginSignup loginSignup = new LoginSignup();
+            loginSignup.Show();
+            this.Hide();
         }
     }
 }
