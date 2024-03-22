@@ -1,6 +1,6 @@
 ﻿namespace AlmonaTech_Society_Managment
 {
-    partial class Form2
+    partial class CreateSociety
     {
         /// <summary>
         /// Required designer variable.
