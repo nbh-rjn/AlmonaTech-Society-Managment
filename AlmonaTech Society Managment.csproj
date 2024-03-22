@@ -72,11 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReqEvent.cs">
+    <Compile Include="DisplayEvent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReqEvent.Designer.cs">
-      <DependentUpon>ReqEvent.cs</DependentUpon>
+    <Compile Include="DisplayEvent.Designer.cs">
+      <DependentUpon>DisplayEvent.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="DisplaySociety.resx">
       <DependentUpon>DisplaySociety.cs</DependentUpon>
@@ -99,8 +99,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ReqEvent.resx">
-      <DependentUpon>ReqEvent.cs</DependentUpon>
+    <EmbeddedResource Include="DisplayEvent.resx">
+      <DependentUpon>DisplayEvent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

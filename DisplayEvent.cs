@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AlmonaTech_Society_Managment
 {
-    public partial class ReqEvent : Form
+    public partial class DisplayEvent : Form
     {
-        public ReqEvent()
+        public DisplayEvent()
         {
             InitializeComponent();
         }

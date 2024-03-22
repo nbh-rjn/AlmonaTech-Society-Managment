@@ -273,6 +273,7 @@
             this.login_btn.TabIndex = 22;
             this.login_btn.Text = "Log In";
             this.login_btn.UseVisualStyleBackColor = true;
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
             // signup_btn
             // 
@@ -284,6 +285,7 @@
             this.signup_btn.TabIndex = 23;
             this.signup_btn.Text = "Sign Up";
             this.signup_btn.UseVisualStyleBackColor = true;
+            this.signup_btn.Click += new System.EventHandler(this.signup_btn_Click);
             // 
             // panel1
             // 
@@ -333,7 +335,7 @@
             this.panel2.TabIndex = 25;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // Form1
+            // LoginSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -342,7 +344,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.LightCyan;
-            this.Name = "Form1";
+            this.Name = "LoginSignup";
             this.Text = "Login Signup";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

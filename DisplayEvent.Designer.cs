@@ -1,6 +1,6 @@
 ﻿namespace AlmonaTech_Society_Managment
 {
-    partial class ReqEvent
+    partial class DisplayEvent
     {
         /// <summary>
         /// Required designer variable.
