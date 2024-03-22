@@ -1,6 +1,6 @@
 ﻿namespace AlmonaTech_Society_Managment
 {
-    partial class Form3
+    partial class Dashboard
     {
         /// <summary>
         /// Required designer variable.

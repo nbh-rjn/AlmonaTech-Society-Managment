@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AlmonaTech_Society_Managment
 {
-    public partial class Form3 : Form
+    public partial class Dashboard : Form
     {
-        public Form3()
+        public Dashboard()
         {
             InitializeComponent();
         }
