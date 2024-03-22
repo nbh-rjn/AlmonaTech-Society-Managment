@@ -1,6 +1,6 @@
 ﻿namespace AlmonaTech_Society_Managment
 {
-    partial class Form1
+    partial class LoginSignup
     {
         /// <summary>
         /// Required designer variable.
@@ -343,7 +343,7 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.LightCyan;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Login Signup";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

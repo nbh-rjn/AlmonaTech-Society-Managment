@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace AlmonaTech_Society_Managment
 {
-    public partial class Form3 : Form
+    public partial class Dashboard : Form
     {
-        public Form3()
+        public Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ance_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
