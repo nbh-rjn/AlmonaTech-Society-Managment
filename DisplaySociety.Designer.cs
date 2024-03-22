@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.create_ance_btn = new System.Windows.Forms.Button();
             this.ance_btn = new System.Windows.Forms.Button();
             this.signout_btn = new System.Windows.Forms.Button();
             this.dashboard__btn = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.societytable = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.create_ance_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).BeginInit();
@@ -56,6 +56,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(198, 654);
             this.panel1.TabIndex = 1;
+            // 
+            // create_ance_btn
+            // 
+            this.create_ance_btn.BackColor = System.Drawing.Color.Azure;
+            this.create_ance_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.create_ance_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.create_ance_btn.Location = new System.Drawing.Point(25, 465);
+            this.create_ance_btn.Name = "create_ance_btn";
+            this.create_ance_btn.Size = new System.Drawing.Size(159, 86);
+            this.create_ance_btn.TabIndex = 5;
+            this.create_ance_btn.Text = "Create Announcements";
+            this.create_ance_btn.UseVisualStyleBackColor = false;
             // 
             // ance_btn
             // 
@@ -80,6 +92,7 @@
             this.signout_btn.TabIndex = 3;
             this.signout_btn.Text = "Sign Out";
             this.signout_btn.UseVisualStyleBackColor = false;
+            this.signout_btn.Click += new System.EventHandler(this.signout_btn_Click);
             // 
             // dashboard__btn
             // 
@@ -116,6 +129,7 @@
             this.createevent_btn.TabIndex = 0;
             this.createevent_btn.Text = "Create Event";
             this.createevent_btn.UseVisualStyleBackColor = false;
+            this.createevent_btn.Click += new System.EventHandler(this.createevent_btn_Click);
             // 
             // panel2
             // 
@@ -131,6 +145,7 @@
             this.societytable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.societytable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.societytable.BackgroundColor = System.Drawing.Color.Azure;
             this.societytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.societytable.GridColor = System.Drawing.Color.LightBlue;
@@ -140,6 +155,7 @@
             this.societytable.RowTemplate.Height = 24;
             this.societytable.Size = new System.Drawing.Size(586, 472);
             this.societytable.TabIndex = 0;
+            this.societytable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.societytable_CellContentClick);
             // 
             // label1
             // 
@@ -150,18 +166,6 @@
             this.label1.Size = new System.Drawing.Size(182, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Society Details";
-            // 
-            // create_ance_btn
-            // 
-            this.create_ance_btn.BackColor = System.Drawing.Color.Azure;
-            this.create_ance_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.create_ance_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.create_ance_btn.Location = new System.Drawing.Point(25, 465);
-            this.create_ance_btn.Name = "create_ance_btn";
-            this.create_ance_btn.Size = new System.Drawing.Size(159, 86);
-            this.create_ance_btn.TabIndex = 5;
-            this.create_ance_btn.Text = "Create Announcements";
-            this.create_ance_btn.UseVisualStyleBackColor = false;
             // 
             // DisplaySociety
             // 

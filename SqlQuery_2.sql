@@ -1,4 +1,4 @@
-﻿use SE_DB
+﻿use societydb
 
 -- userstory 01 query
 select * from Society

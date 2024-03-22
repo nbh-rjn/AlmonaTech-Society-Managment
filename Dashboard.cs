@@ -53,7 +53,7 @@ namespace AlmonaTech_Society_Managment
 
         private void viewsociety_details_btn_Click(object sender, EventArgs e)
         {
-            DisplayEvent displayEvent=new DisplayEvent();
+            DisplaySociety displayEvent=new DisplaySociety();
             displayEvent.Show();
 
             this.Hide();

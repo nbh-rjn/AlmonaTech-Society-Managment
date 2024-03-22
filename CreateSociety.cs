@@ -68,5 +68,26 @@ namespace AlmonaTech_Society_Managment
             loginSignup.Show();
             this.Hide();
         }
+
+        private void viewevents_btn_Click(object sender, EventArgs e)
+        {
+            DisplayEvent displayEvent = new DisplayEvent();
+            displayEvent.Show();
+            this.Hide();
+        }
+
+        private void viewsociety_details_btn_Click(object sender, EventArgs e)
+        {
+            DisplaySociety displaySocietyDetails = new DisplaySociety();
+            displaySocietyDetails.Show();
+            this.Hide();
+        }
+
+        private void dash_btn_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
     }
 }

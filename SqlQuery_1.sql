@@ -27,7 +27,7 @@ create table Society
 	societyID int identity(1,1),
 	primary key(societyID),
 	sname varchar(100),
-	description varchar(max)
+	description_ varchar(max)
 )
 
 create table events_

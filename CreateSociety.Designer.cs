@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.ance_btn = new System.Windows.Forms.Button();
+            this.dash_btn = new System.Windows.Forms.Button();
             this.signout_btn = new System.Windows.Forms.Button();
             this.viewsociety_details_btn = new System.Windows.Forms.Button();
             this.viewevents_btn = new System.Windows.Forms.Button();
@@ -49,8 +49,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightBlue;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.ance_btn);
+            this.panel1.Controls.Add(this.dash_btn);
             this.panel1.Controls.Add(this.signout_btn);
             this.panel1.Controls.Add(this.viewsociety_details_btn);
             this.panel1.Controls.Add(this.viewevents_btn);
@@ -60,29 +60,30 @@
             this.panel1.Size = new System.Drawing.Size(224, 713);
             this.panel1.TabIndex = 1;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Location = new System.Drawing.Point(25, 514);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 86);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "View Announcements";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // ance_btn
             // 
             this.ance_btn.BackColor = System.Drawing.Color.Azure;
             this.ance_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ance_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.ance_btn.Location = new System.Drawing.Point(25, 402);
+            this.ance_btn.Location = new System.Drawing.Point(25, 514);
             this.ance_btn.Name = "ance_btn";
             this.ance_btn.Size = new System.Drawing.Size(159, 86);
-            this.ance_btn.TabIndex = 4;
-            this.ance_btn.Text = "Create Society";
+            this.ance_btn.TabIndex = 5;
+            this.ance_btn.Text = "View Announcements";
             this.ance_btn.UseVisualStyleBackColor = false;
+            // 
+            // dash_btn
+            // 
+            this.dash_btn.BackColor = System.Drawing.Color.Azure;
+            this.dash_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dash_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.dash_btn.Location = new System.Drawing.Point(25, 402);
+            this.dash_btn.Name = "dash_btn";
+            this.dash_btn.Size = new System.Drawing.Size(159, 86);
+            this.dash_btn.TabIndex = 4;
+            this.dash_btn.Text = "Dashboard";
+            this.dash_btn.UseVisualStyleBackColor = false;
+            this.dash_btn.Click += new System.EventHandler(this.dash_btn_Click);
             // 
             // signout_btn
             // 
@@ -108,6 +109,7 @@
             this.viewsociety_details_btn.TabIndex = 2;
             this.viewsociety_details_btn.Text = "View Society";
             this.viewsociety_details_btn.UseVisualStyleBackColor = false;
+            this.viewsociety_details_btn.Click += new System.EventHandler(this.viewsociety_details_btn_Click);
             // 
             // viewevents_btn
             // 
@@ -120,6 +122,7 @@
             this.viewevents_btn.TabIndex = 1;
             this.viewevents_btn.Text = "View Events";
             this.viewevents_btn.UseVisualStyleBackColor = false;
+            this.viewevents_btn.Click += new System.EventHandler(this.viewevents_btn_Click);
             // 
             // createevent_btn
             // 
@@ -228,8 +231,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button ance_btn;
+        private System.Windows.Forms.Button dash_btn;
         private System.Windows.Forms.Button signout_btn;
         private System.Windows.Forms.Button viewsociety_details_btn;
         private System.Windows.Forms.Button viewevents_btn;
