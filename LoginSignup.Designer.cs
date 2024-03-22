@@ -1,6 +1,6 @@
 ﻿namespace AlmonaTech_Society_Managment
 {
-    partial class Form1
+    partial class LoginSignup
     {
         /// <summary>
         /// Required designer variable.

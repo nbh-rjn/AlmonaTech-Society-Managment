@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AlmonaTech_Society_Managment
 {
-    public partial class Form1 : Form
+    public partial class LoginSignup : Form
     {
-        public Form1()
+        public LoginSignup()
         {
             InitializeComponent();
         }
