@@ -16,5 +16,10 @@ namespace AlmonaTech_Society_Managment
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
