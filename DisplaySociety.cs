@@ -88,7 +88,23 @@ namespace AlmonaTech_Society_Managment
 
         private void createevent_btn_Click(object sender, EventArgs e)
         {
+            CreateEvent createEvent = new CreateEvent();
+            createEvent.Show();
+            this.Hide();
+        }
 
+        private void viewevents_btn_Click(object sender, EventArgs e)
+        {
+            DisplayEvent viewEvent = new DisplayEvent();
+            viewEvent.Show();
+            this.Hide();
+        }
+
+        private void dashboard__btn_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
         }
     }
 }

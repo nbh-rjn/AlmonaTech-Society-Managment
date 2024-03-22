@@ -35,18 +35,18 @@
             this.viewsociety_details_btn = new System.Windows.Forms.Button();
             this.viewevents_btn = new System.Windows.Forms.Button();
             this.createevent_btn = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.ev_name = new System.Windows.Forms.RichTextBox();
+            this.desc = new System.Windows.Forms.RichTextBox();
+            this.locale = new System.Windows.Forms.RichTextBox();
+            this.date_ = new System.Windows.Forms.RichTextBox();
+            this.sname = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.add_event_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,6 +87,7 @@
             this.ance_btn.TabIndex = 4;
             this.ance_btn.Text = "Create Society";
             this.ance_btn.UseVisualStyleBackColor = false;
+            this.ance_btn.Click += new System.EventHandler(this.ance_btn_Click);
             // 
             // signout_btn
             // 
@@ -99,6 +100,7 @@
             this.signout_btn.TabIndex = 3;
             this.signout_btn.Text = "Sign Out";
             this.signout_btn.UseVisualStyleBackColor = false;
+            this.signout_btn.Click += new System.EventHandler(this.signout_btn_Click);
             // 
             // viewsociety_details_btn
             // 
@@ -111,6 +113,7 @@
             this.viewsociety_details_btn.TabIndex = 2;
             this.viewsociety_details_btn.Text = "View Society";
             this.viewsociety_details_btn.UseVisualStyleBackColor = false;
+            this.viewsociety_details_btn.Click += new System.EventHandler(this.viewsociety_details_btn_Click);
             // 
             // viewevents_btn
             // 
@@ -123,6 +126,7 @@
             this.viewevents_btn.TabIndex = 1;
             this.viewevents_btn.Text = "View Events";
             this.viewevents_btn.UseVisualStyleBackColor = false;
+            this.viewevents_btn.Click += new System.EventHandler(this.viewevents_btn_Click);
             // 
             // createevent_btn
             // 
@@ -135,48 +139,49 @@
             this.createevent_btn.TabIndex = 0;
             this.createevent_btn.Text = "Create Event";
             this.createevent_btn.UseVisualStyleBackColor = false;
+            this.createevent_btn.Click += new System.EventHandler(this.createevent_btn_Click);
             // 
-            // richTextBox1
+            // ev_name
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(396, 144);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(328, 37);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.ev_name.Location = new System.Drawing.Point(396, 144);
+            this.ev_name.Name = "ev_name";
+            this.ev_name.Size = new System.Drawing.Size(328, 37);
+            this.ev_name.TabIndex = 3;
+            this.ev_name.Text = "";
             // 
-            // richTextBox2
+            // desc
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(275, 466);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(449, 175);
-            this.richTextBox2.TabIndex = 4;
-            this.richTextBox2.Text = "";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            this.desc.Location = new System.Drawing.Point(275, 457);
+            this.desc.Name = "desc";
+            this.desc.Size = new System.Drawing.Size(449, 175);
+            this.desc.TabIndex = 4;
+            this.desc.Text = "";
+            this.desc.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
-            // richTextBox3
+            // locale
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(396, 356);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(328, 35);
-            this.richTextBox3.TabIndex = 5;
-            this.richTextBox3.Text = "";
-            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
+            this.locale.Location = new System.Drawing.Point(396, 356);
+            this.locale.Name = "locale";
+            this.locale.Size = new System.Drawing.Size(328, 35);
+            this.locale.TabIndex = 5;
+            this.locale.Text = "";
+            this.locale.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
             // 
-            // richTextBox4
+            // date_
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(396, 281);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(328, 39);
-            this.richTextBox4.TabIndex = 6;
-            this.richTextBox4.Text = "";
+            this.date_.Location = new System.Drawing.Point(396, 281);
+            this.date_.Name = "date_";
+            this.date_.Size = new System.Drawing.Size(328, 39);
+            this.date_.TabIndex = 6;
+            this.date_.Text = "";
             // 
-            // richTextBox5
+            // sname
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(396, 206);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(328, 35);
-            this.richTextBox5.TabIndex = 7;
-            this.richTextBox5.Text = "";
+            this.sname.Location = new System.Drawing.Point(396, 206);
+            this.sname.Name = "sname";
+            this.sname.Size = new System.Drawing.Size(328, 35);
+            this.sname.TabIndex = 7;
+            this.sname.Text = "";
             // 
             // label1
             // 
@@ -244,36 +249,37 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Add an Event";
             // 
-            // button2
+            // add_event_btn
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Azure;
-            this.button2.Location = new System.Drawing.Point(598, 673);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 49);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Add Event";
-            this.button2.UseVisualStyleBackColor = false;
+            this.add_event_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.add_event_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_event_btn.ForeColor = System.Drawing.Color.Azure;
+            this.add_event_btn.Location = new System.Drawing.Point(565, 641);
+            this.add_event_btn.Name = "add_event_btn";
+            this.add_event_btn.Size = new System.Drawing.Size(159, 49);
+            this.add_event_btn.TabIndex = 6;
+            this.add_event_btn.Text = "Add Event";
+            this.add_event_btn.UseVisualStyleBackColor = false;
+            this.add_event_btn.Click += new System.EventHandler(this.add_event_btn_Click);
             // 
             // CreateEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(800, 754);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(800, 721);
+            this.Controls.Add(this.add_event_btn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.sname);
+            this.Controls.Add(this.date_);
+            this.Controls.Add(this.locale);
+            this.Controls.Add(this.desc);
+            this.Controls.Add(this.ev_name);
             this.Controls.Add(this.panel1);
             this.Name = "CreateEvent";
             this.Text = "Form1";
@@ -292,17 +298,17 @@
         private System.Windows.Forms.Button viewsociety_details_btn;
         private System.Windows.Forms.Button viewevents_btn;
         private System.Windows.Forms.Button createevent_btn;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.RichTextBox ev_name;
+        private System.Windows.Forms.RichTextBox desc;
+        private System.Windows.Forms.RichTextBox locale;
+        private System.Windows.Forms.RichTextBox date_;
+        private System.Windows.Forms.RichTextBox sname;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button add_event_btn;
     }
 }

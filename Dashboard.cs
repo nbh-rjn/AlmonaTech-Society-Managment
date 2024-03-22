@@ -37,7 +37,7 @@ namespace AlmonaTech_Society_Managment
 
         private void createevent_btn_Click(object sender, EventArgs e)
         {
-            DisplayEvent reqEvent = new DisplayEvent();
+            CreateEvent reqEvent = new CreateEvent();
             reqEvent.Show();
             this.Hide();
 

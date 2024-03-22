@@ -33,14 +33,14 @@
             this.ance_btn = new System.Windows.Forms.Button();
             this.signout_btn = new System.Windows.Forms.Button();
             this.dashboard__btn = new System.Windows.Forms.Button();
-            this.viewevents_btn = new System.Windows.Forms.Button();
+            this.reqvents_btn = new System.Windows.Forms.Button();
             this.viewsociety_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.societytable = new System.Windows.Forms.DataGridView();
+            this.eventstable = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.societytable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventstable)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.ance_btn);
             this.panel1.Controls.Add(this.signout_btn);
             this.panel1.Controls.Add(this.dashboard__btn);
-            this.panel1.Controls.Add(this.viewevents_btn);
+            this.panel1.Controls.Add(this.reqvents_btn);
             this.panel1.Controls.Add(this.viewsociety_btn);
             this.panel1.Location = new System.Drawing.Point(-21, 0);
             this.panel1.Name = "panel1";
@@ -92,6 +92,7 @@
             this.signout_btn.TabIndex = 3;
             this.signout_btn.Text = "Sign Out";
             this.signout_btn.UseVisualStyleBackColor = false;
+            this.signout_btn.Click += new System.EventHandler(this.signout_btn_Click);
             // 
             // dashboard__btn
             // 
@@ -104,18 +105,20 @@
             this.dashboard__btn.TabIndex = 2;
             this.dashboard__btn.Text = "Dashboard";
             this.dashboard__btn.UseVisualStyleBackColor = false;
+            this.dashboard__btn.Click += new System.EventHandler(this.dashboard__btn_Click);
             // 
-            // viewevents_btn
+            // reqvents_btn
             // 
-            this.viewevents_btn.BackColor = System.Drawing.Color.Azure;
-            this.viewevents_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewevents_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.viewevents_btn.Location = new System.Drawing.Point(25, 138);
-            this.viewevents_btn.Name = "viewevents_btn";
-            this.viewevents_btn.Size = new System.Drawing.Size(159, 86);
-            this.viewevents_btn.TabIndex = 1;
-            this.viewevents_btn.Text = "Request Event";
-            this.viewevents_btn.UseVisualStyleBackColor = false;
+            this.reqvents_btn.BackColor = System.Drawing.Color.Azure;
+            this.reqvents_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reqvents_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.reqvents_btn.Location = new System.Drawing.Point(25, 138);
+            this.reqvents_btn.Name = "reqvents_btn";
+            this.reqvents_btn.Size = new System.Drawing.Size(159, 86);
+            this.reqvents_btn.TabIndex = 1;
+            this.reqvents_btn.Text = "Request Event";
+            this.reqvents_btn.UseVisualStyleBackColor = false;
+            this.reqvents_btn.Click += new System.EventHandler(this.reqvents_btn_Click);
             // 
             // viewsociety_btn
             // 
@@ -128,6 +131,7 @@
             this.viewsociety_btn.TabIndex = 0;
             this.viewsociety_btn.Text = "View Societies";
             this.viewsociety_btn.UseVisualStyleBackColor = false;
+            this.viewsociety_btn.Click += new System.EventHandler(this.viewsociety_btn_Click);
             // 
             // label1
             // 
@@ -142,29 +146,29 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightBlue;
-            this.panel2.Controls.Add(this.societytable);
+            this.panel2.Controls.Add(this.eventstable);
             this.panel2.Location = new System.Drawing.Point(275, 107);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(621, 502);
             this.panel2.TabIndex = 4;
             // 
-            // societytable
+            // eventstable
             // 
-            this.societytable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.eventstable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.societytable.BackgroundColor = System.Drawing.Color.Azure;
-            this.societytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.societytable.GridColor = System.Drawing.Color.LightBlue;
-            this.societytable.Location = new System.Drawing.Point(15, 13);
-            this.societytable.Name = "societytable";
-            this.societytable.RowHeadersWidth = 51;
-            this.societytable.RowTemplate.Height = 24;
-            this.societytable.Size = new System.Drawing.Size(586, 472);
-            this.societytable.TabIndex = 0;
-            this.societytable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.societytable_CellContentClick);
+            this.eventstable.BackgroundColor = System.Drawing.Color.Azure;
+            this.eventstable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.eventstable.GridColor = System.Drawing.Color.LightBlue;
+            this.eventstable.Location = new System.Drawing.Point(15, 13);
+            this.eventstable.Name = "eventstable";
+            this.eventstable.RowHeadersWidth = 51;
+            this.eventstable.RowTemplate.Height = 24;
+            this.eventstable.Size = new System.Drawing.Size(586, 472);
+            this.eventstable.TabIndex = 0;
+            this.eventstable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.societytable_CellContentClick);
             // 
-            // ReqEvent
+            // DisplayEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,11 +177,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "ReqEvent";
+            this.Name = "DisplayEvent";
             this.Text = "ReqEvent";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.societytable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventstable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,10 +194,10 @@
         private System.Windows.Forms.Button ance_btn;
         private System.Windows.Forms.Button signout_btn;
         private System.Windows.Forms.Button dashboard__btn;
-        private System.Windows.Forms.Button viewevents_btn;
+        private System.Windows.Forms.Button reqvents_btn;
         private System.Windows.Forms.Button viewsociety_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView societytable;
+        private System.Windows.Forms.DataGridView eventstable;
     }
 }

@@ -105,6 +105,7 @@
             this.dashboard__btn.TabIndex = 2;
             this.dashboard__btn.Text = "Dashboard";
             this.dashboard__btn.UseVisualStyleBackColor = false;
+            this.dashboard__btn.Click += new System.EventHandler(this.dashboard__btn_Click);
             // 
             // viewevents_btn
             // 
@@ -117,6 +118,7 @@
             this.viewevents_btn.TabIndex = 1;
             this.viewevents_btn.Text = "View Events";
             this.viewevents_btn.UseVisualStyleBackColor = false;
+            this.viewevents_btn.Click += new System.EventHandler(this.viewevents_btn_Click);
             // 
             // createevent_btn
             // 
