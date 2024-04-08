@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,9 +23,36 @@ namespace AlmonaTech_Society_Managment
 
         }
 
-        private void add_event_btn_Click(object sender, EventArgs e)
+        private void add_event_btn_Click(object sender, EventArgs e) //post announcement
         {
+            // Get the content from the RichTextBox
+            string announcementDesc = desc.Text;
 
+            // Insert the content into the announcement table
+            string query = "INSERT INTO anncement (announcementDesc) VALUES (@announcementDesc)";
+
+            using (SqlConnection connection = new SqlConnection("Your_Connection_String_Here"))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // Add parameters to the command to avoid SQL injection
+                    command.Parameters.AddWithValue("@announcementDesc", announcementDesc);
+
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Announcement saved successfully.");
+                        // Clear the RichTextBox after saving
+                        desc.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to save announcement.");
+                    }
+                }
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)

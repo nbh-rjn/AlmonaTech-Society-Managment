@@ -70,5 +70,12 @@ namespace AlmonaTech_Society_Managment
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ApproveMember approveMember= new ApproveMember();
+            approveMember.Show();
+            this.Hide();
+        }
     }
 }

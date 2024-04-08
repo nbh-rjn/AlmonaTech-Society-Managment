@@ -52,11 +52,17 @@
     <Compile Include="ApproveEventcs.Designer.cs">
       <DependentUpon>ApproveEventcs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Create Announcement.cs">
+    <Compile Include="ApproveMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Create Announcement.Designer.cs">
-      <DependentUpon>Create Announcement.cs</DependentUpon>
+    <Compile Include="ApproveMember.Designer.cs">
+      <DependentUpon>ApproveMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAnnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAnnouncement.Designer.cs">
+      <DependentUpon>CreateAnnouncement.cs</DependentUpon>
     </Compile>
     <Compile Include="DisplaySociety.cs">
       <SubType>Form</SubType>
@@ -114,6 +120,12 @@
     <Compile Include="DisplayEvent.Designer.cs">
       <DependentUpon>DisplayEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewAnnouncement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAnnouncement.Designer.cs">
+      <DependentUpon>ViewAnnouncement.cs</DependentUpon>
+    </Compile>
     <Compile Include="viewsociety_membercs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,8 +135,11 @@
     <EmbeddedResource Include="ApproveEventcs.resx">
       <DependentUpon>ApproveEventcs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Create Announcement.resx">
-      <DependentUpon>Create Announcement.cs</DependentUpon>
+    <EmbeddedResource Include="ApproveMember.resx">
+      <DependentUpon>ApproveMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAnnouncement.resx">
+      <DependentUpon>CreateAnnouncement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateEvent.resx">
       <DependentUpon>CreateEvent.cs</DependentUpon>
@@ -157,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayEvent.resx">
       <DependentUpon>DisplayEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAnnouncement.resx">
+      <DependentUpon>ViewAnnouncement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewsociety_membercs.resx">
       <DependentUpon>viewsociety_membercs.cs</DependentUpon>
