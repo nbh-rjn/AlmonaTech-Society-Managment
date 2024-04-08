@@ -72,5 +72,32 @@ namespace AlmonaTech_Society_Managment
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void societytable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == societytable.Columns["join"].Index && e.RowIndex != -1)
+            {
+                // Retrieve data from the clicked row
+                DataGridViewRow clickedRow = societytable.Rows[e.RowIndex];
+                int societyID = Convert.ToInt32(clickedRow.Cells["societyID"].Value);
+                string sname = Convert.ToString(clickedRow.Cells["sname"].Value);
+                string status = "Requested";
+
+                // Insert data into the member_ table
+                string q = "INSERT INTO member_ (societyID, sname, status_) VALUES (@societyID, @sname, @status)";
+
+                using (cn)
+                {
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand(q, cn);
+                    cmd.Parameters.AddWithValue("@societyID", societyID);
+                    cmd.Parameters.AddWithValue("@sname", sname);
+                    cmd.Parameters.AddWithValue("@status", status);
+                    cmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Data inserted into member_ table.");
+            }
         }
+    }
 }

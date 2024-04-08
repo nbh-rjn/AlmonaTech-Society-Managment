@@ -72,6 +72,7 @@
             this.societytable.RowTemplate.Height = 24;
             this.societytable.Size = new System.Drawing.Size(586, 472);
             this.societytable.TabIndex = 0;
+            this.societytable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.societytable_CellContentClick);
             // 
             // join
             // 
