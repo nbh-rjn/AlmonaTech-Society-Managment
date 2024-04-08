@@ -52,6 +52,12 @@
     <Compile Include="ApproveEventcs.Designer.cs">
       <DependentUpon>ApproveEventcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Create Announcement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Announcement.Designer.cs">
+      <DependentUpon>Create Announcement.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisplaySociety.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </Compile>
     <EmbeddedResource Include="ApproveEventcs.resx">
       <DependentUpon>ApproveEventcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Announcement.resx">
+      <DependentUpon>Create Announcement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateEvent.resx">
       <DependentUpon>CreateEvent.cs</DependentUpon>
