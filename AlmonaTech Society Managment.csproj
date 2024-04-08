@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApproveEventcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveEventcs.Designer.cs">
+      <DependentUpon>ApproveEventcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisplaySociety.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,18 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MemberDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberDashboard.Designer.cs">
+      <DependentUpon>MemberDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_viewEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_viewEvent.Designer.cs">
+      <DependentUpon>Member_viewEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="MentorDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +108,15 @@
     <Compile Include="DisplayEvent.Designer.cs">
       <DependentUpon>DisplayEvent.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewsociety_membercs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewsociety_membercs.Designer.cs">
+      <DependentUpon>viewsociety_membercs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ApproveEventcs.resx">
+      <DependentUpon>ApproveEventcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateEvent.resx">
       <DependentUpon>CreateEvent.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,26 +132,35 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MemberDashboard.resx">
+      <DependentUpon>MemberDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_viewEvent.resx">
+      <DependentUpon>Member_viewEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MentorDashboard.resx">
       <DependentUpon>MentorDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="DisplayEvent.resx">
       <DependentUpon>DisplayEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewsociety_membercs.resx">
+      <DependentUpon>viewsociety_membercs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -136,6 +172,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Res\approve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\icons8-menu-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\icons8-calendar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\icons8-leave-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\icons8-view-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\icons8-home-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

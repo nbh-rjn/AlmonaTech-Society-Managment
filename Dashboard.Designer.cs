@@ -36,6 +36,7 @@
             this.viewevents_btn = new System.Windows.Forms.Button();
             this.createevent_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -173,5 +174,6 @@
         private System.Windows.Forms.Button ance_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

@@ -63,7 +63,7 @@ namespace AlmonaTech_Society_Managment
             //verify
             cn.Open();
            
-            string q = "select count(1) from User_ where fname = @uname AND pass = @pass";
+            string q = "select usertype from User_ where fname = @uname AND pass = @pass";
 
             SqlCommand cmd = new SqlCommand(q, cn);
             cmd.Parameters.AddWithValue("@uname", uname_lg.Text);
@@ -72,18 +72,34 @@ namespace AlmonaTech_Society_Managment
 
 
             //verification code
-            int count = Convert.ToInt32(cmd.ExecuteScalar());
+           
+            string type = Convert.ToString(cmd.ExecuteScalar());
 
 
 
-             if (count == 1) // if correct
+            if (type != null) // if correct
               {
                   MessageBox.Show("Login successful!");
-
+                
+                if (type=="Lead")
+                {
                     Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-
-                this.Hide();
+                    dashboard.Show();
+                    this.Hide();
+                }
+                else if(type=="Mentor")
+                {
+                    MentorDashboard mentor = new MentorDashboard();
+                    mentor.Show();
+                    this.Hide();
+                }
+                else if(type=="Member")
+                {
+                    MemberDashboard member = new MemberDashboard();
+                    member.Show();
+                    this.Hide();
+                }
+                  
 
             }
               else
@@ -101,30 +117,96 @@ namespace AlmonaTech_Society_Managment
         {
             //store in database
 
-            cn.Open();
-            SqlTransaction transaction = cn.BeginTransaction();
-            string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
-
-            SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
-            cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
-            cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
-            cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
-            cmdAccounts.Parameters.AddWithValue("@usertype", "Lead");
-            cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
+           
 
 
-            cmdAccounts.ExecuteNonQuery();
-
-            transaction.Commit();
-
+            if (mbtn.Checked)
+            {
 
 
-            MessageBox.Show("Signup successful!");
-            cn.Close();
+                cn.Open();
+                SqlTransaction transaction = cn.BeginTransaction();
+                string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
 
-            Dashboard dashboard=new Dashboard();
-            dashboard.Show();
-            this.Hide();
+                SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
+                cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@usertype", "Member");
+                cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
+
+
+                cmdAccounts.ExecuteNonQuery();
+
+                transaction.Commit();
+
+
+
+                MessageBox.Show("Signup successful!");
+                cn.Close();
+
+
+                MemberDashboard dashboard_ = new MemberDashboard();
+                dashboard_.Show();
+                this.Hide();
+            }
+            else if(ldbtn.Checked)
+            {
+                cn.Open();
+                SqlTransaction transaction = cn.BeginTransaction();
+                string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
+
+                SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
+                cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@usertype", "Lead");
+                cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
+
+
+                cmdAccounts.ExecuteNonQuery();
+
+                transaction.Commit();
+
+
+
+                MessageBox.Show("Signup successful!");
+                cn.Close();
+
+                Dashboard dashboard = new Dashboard();
+                dashboard.Show();
+                this.Hide();
+            }
+            else if(mt_btn.Checked)
+            {
+
+                cn.Open();
+                SqlTransaction transaction = cn.BeginTransaction();
+                string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
+
+                SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
+                cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
+                cmdAccounts.Parameters.AddWithValue("@usertype", "Mentor");
+                cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
+
+
+                cmdAccounts.ExecuteNonQuery();
+
+                transaction.Commit();
+
+
+
+                MessageBox.Show("Signup successful!");
+                cn.Close();
+
+
+                MentorDashboard md=new MentorDashboard();
+                md.Show();
+                this.Hide();
+            }
+           
            
         }
 

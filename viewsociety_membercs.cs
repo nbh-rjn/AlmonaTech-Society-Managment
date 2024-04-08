@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Common;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Collections;
 using System.Collections.ObjectModel;
+using System.Data.SqlClient;
+
 
 namespace AlmonaTech_Society_Managment
 {
-    public partial class DisplaySociety : Form
+    public partial class viewsociety_membercs : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand command = new SqlCommand();
@@ -24,16 +23,11 @@ namespace AlmonaTech_Society_Managment
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
 
-        public DisplaySociety()
+        public viewsociety_membercs()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
             SocietyGridView();
-        }
-
-        private void societytable_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         public void SocietyGridView()
@@ -47,7 +41,7 @@ namespace AlmonaTech_Society_Managment
                 string q = "select * from Society";
 
                 SqlCommand cmd = new SqlCommand(q, cn);
-            
+
 
 
 
@@ -78,38 +72,5 @@ namespace AlmonaTech_Society_Managment
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        private void signout_btn_Click(object sender, EventArgs e)
-        {
-            LoginSignup loginSignup = new LoginSignup();
-            loginSignup.Show();
-            this.Hide();
         }
-
-        private void createevent_btn_Click(object sender, EventArgs e)
-        {
-            CreateEvent createEvent = new CreateEvent();
-            createEvent.Show();
-            this.Hide();
-        }
-
-        private void viewevents_btn_Click(object sender, EventArgs e)
-        {
-            DisplayEvent viewEvent = new DisplayEvent();
-            viewEvent.Show();
-            this.Hide();
-        }
-
-        private void dashboard__btn_Click(object sender, EventArgs e)
-        {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
-        }
-
-        private void DisplaySociety_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
 }

@@ -17,9 +17,12 @@ namespace AlmonaTech_Society_Managment
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e) // clicking the approve butotn
         {
-
+            ApproveEventcs approveEventcs = new ApproveEventcs();
+            approveEventcs.Show();
+            this.Hide();
+            
         }
     }
 }

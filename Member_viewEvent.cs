@@ -2,20 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.Common;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using System.Collections;
-using System.Collections.ObjectModel;
+using System.Data.SqlClient;
 
 namespace AlmonaTech_Society_Managment
 {
-    public partial class DisplaySociety : Form
+    public partial class Member_viewEvent : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand command = new SqlCommand();
@@ -24,19 +20,15 @@ namespace AlmonaTech_Society_Managment
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
 
-        public DisplaySociety()
+        public Member_viewEvent()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
-            SocietyGridView();
+            EventGridView();
         }
 
-        private void societytable_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
-
-        public void SocietyGridView()
+        public void EventGridView()
         {
 
             try
@@ -44,11 +36,9 @@ namespace AlmonaTech_Society_Managment
                 // Open connection
 
                 cn.Open();
-                string q = "select * from Society";
+                string q = "select * from eventReq";
 
                 SqlCommand cmd = new SqlCommand(q, cn);
-            
-
 
 
                 // Use SqlDataAdapter to fill the DataTable
@@ -66,8 +56,7 @@ namespace AlmonaTech_Society_Managment
                     adapter.Fill(dataTable);
                 }
 
-                // Bind the DataTable to the DataGridView
-                societytable.DataSource = dataTable;
+                eventstable.DataSource = dataTable;
 
 
                 cn.Close();
@@ -78,38 +67,28 @@ namespace AlmonaTech_Society_Managment
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+        private void eventstable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Member_viewEvent_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewevent_btn_Click(object sender, EventArgs e)
+        {
+            MemberDashboard memberDashboard = new MemberDashboard();
+            memberDashboard.Show();
+            this.Hide();
+        }
 
         private void signout_btn_Click(object sender, EventArgs e)
         {
-            LoginSignup loginSignup = new LoginSignup();
+           LoginSignup loginSignup = new LoginSignup();
             loginSignup.Show();
             this.Hide();
-        }
-
-        private void createevent_btn_Click(object sender, EventArgs e)
-        {
-            CreateEvent createEvent = new CreateEvent();
-            createEvent.Show();
-            this.Hide();
-        }
-
-        private void viewevents_btn_Click(object sender, EventArgs e)
-        {
-            DisplayEvent viewEvent = new DisplayEvent();
-            viewEvent.Show();
-            this.Hide();
-        }
-
-        private void dashboard__btn_Click(object sender, EventArgs e)
-        {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
-        }
-
-        private void DisplaySociety_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

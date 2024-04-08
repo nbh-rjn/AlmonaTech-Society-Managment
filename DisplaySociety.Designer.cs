@@ -180,6 +180,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "DisplaySociety";
             this.Text = "DisplaySociety";
+            this.Load += new System.EventHandler(this.DisplaySociety_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).EndInit();
