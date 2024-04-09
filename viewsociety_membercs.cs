@@ -20,6 +20,7 @@ namespace AlmonaTech_Society_Managment
         SqlCommand command = new SqlCommand();
         SqlDataReader dr;
 
+        public int userid;
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
 
@@ -27,6 +28,13 @@ namespace AlmonaTech_Society_Managment
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
+            SocietyGridView();
+        }
+        public viewsociety_membercs(int uid)
+        {
+            InitializeComponent();
+            cn = new SqlConnection(conn);
+            this.userid = uid;
             SocietyGridView();
         }
 

@@ -31,12 +31,14 @@ namespace AlmonaTech_Society_Managment
 
         private void view_society_btn_Click(object sender, EventArgs e)
         {
-            
+           Member_SocietyLeavecs member_view= new Member_SocietyLeavecs(uid);
+            member_view.Show();
+            this.Hide();
         }
 
         private void join_society_btn_Click(object sender, EventArgs e)
         {
-            viewsociety_membercs viewsociety_Membercs = new viewsociety_membercs();
+            viewsociety_membercs viewsociety_Membercs = new viewsociety_membercs(uid);
             viewsociety_Membercs.Show();
             this.Hide();
         }
