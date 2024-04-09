@@ -12,9 +12,16 @@ namespace AlmonaTech_Society_Managment
 {
     public partial class Dashboard : Form
     {
+        public int uid;
         public Dashboard()
         {
             InitializeComponent();
+        }
+
+        public Dashboard(int uid)
+        {
+            InitializeComponent();
+            this.uid = uid;
         }
 
         private void label1_Click(object sender, EventArgs e)

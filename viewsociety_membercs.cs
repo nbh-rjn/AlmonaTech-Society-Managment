@@ -84,7 +84,7 @@ namespace AlmonaTech_Society_Managment
                 string status = "Requested";
 
                 // Insert data into the member_ table
-                string q = "INSERT INTO member_ (societyID, sname, status_) VALUES (@societyID, @sname, @status)";
+                string q = "insert into member_ (societyID, sname, status_) values (@societyID, @sname, @status)";
 
                 using (cn)
                 {
@@ -94,10 +94,18 @@ namespace AlmonaTech_Society_Managment
                     cmd.Parameters.AddWithValue("@sname", sname);
                     cmd.Parameters.AddWithValue("@status", status);
                     cmd.ExecuteNonQuery();
+                    cn.Close();
                 }
 
-                MessageBox.Show("Data inserted into member_ table.");
+                MessageBox.Show("Your request will be processed soon");
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MemberDashboard memberDashboard = new MemberDashboard();
+            memberDashboard.Show();
+            this.Hide();
         }
     }
 }

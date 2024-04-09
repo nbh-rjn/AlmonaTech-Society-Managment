@@ -36,7 +36,7 @@ namespace AlmonaTech_Society_Managment
                 // Open connection
 
                 cn.Open();
-                string q = "select * from eventReq";
+                string q = "select * from eventRequest";
 
                 SqlCommand cmd = new SqlCommand(q, cn);
 
@@ -87,6 +87,27 @@ namespace AlmonaTech_Society_Managment
         private void signout_btn_Click(object sender, EventArgs e)
         {
            LoginSignup loginSignup = new LoginSignup();
+            loginSignup.Show();
+            this.Hide();
+        }
+
+        private void join_society_btn_Click(object sender, EventArgs e)
+        {
+            viewsociety_membercs viewsociety_Membercs = new viewsociety_membercs();
+            viewsociety_Membercs.Show();
+            this.Hide();
+        }
+
+        private void view_society_btn_Click(object sender, EventArgs e)
+        {
+            Member_SocietyLeavecs member_Leave=new Member_SocietyLeavecs();
+            member_Leave.Show();
+            this.Hide();
+        }
+
+        private void leave_society_btn_Click(object sender, EventArgs e)
+        {
+            LoginSignup loginSignup = new LoginSignup();
             loginSignup.Show();
             this.Hide();
         }

@@ -1,6 +1,6 @@
 ﻿namespace AlmonaTech_Society_Managment
 {
-    partial class viewsociety_membercs
+    partial class Member_SocietyLeavecs
     {
         /// <summary>
         /// Required designer variable.
@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.societytable = new System.Windows.Forms.DataGridView();
-            this.join = new System.Windows.Forms.DataGridViewButtonColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Leave = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,21 +44,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(373, 42);
+            this.label1.Location = new System.Drawing.Point(427, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 29);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Society Details";
+            this.label1.Size = new System.Drawing.Size(176, 29);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Your Societies";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightBlue;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.societytable);
-            this.panel2.Location = new System.Drawing.Point(143, 104);
+            this.panel2.Location = new System.Drawing.Point(197, 98);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(621, 502);
-            this.panel2.TabIndex = 4;
+            this.panel2.TabIndex = 7;
             // 
             // societytable
             // 
@@ -69,7 +70,7 @@
             this.societytable.BackgroundColor = System.Drawing.Color.Azure;
             this.societytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.societytable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.join});
+            this.Leave});
             this.societytable.GridColor = System.Drawing.Color.LightBlue;
             this.societytable.Location = new System.Drawing.Point(16, 14);
             this.societytable.Name = "societytable";
@@ -77,26 +78,16 @@
             this.societytable.RowTemplate.Height = 24;
             this.societytable.Size = new System.Drawing.Size(586, 472);
             this.societytable.TabIndex = 0;
-            this.societytable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.societytable_CellContentClick);
-            // 
-            // join
-            // 
-            this.join.HeaderText = "Join";
-            this.join.MinimumWidth = 6;
-            this.join.Name = "join";
-            this.join.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.join.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AlmonaTech_Society_Managment.Properties.Resources.icons8_home_50;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(38, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 41);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -106,17 +97,23 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // viewsociety_membercs
+            // Leave
+            // 
+            this.Leave.HeaderText = "Leave";
+            this.Leave.MinimumWidth = 6;
+            this.Leave.Name = "Leave";
+            // 
+            // Member_SocietyLeavecs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(906, 649);
+            this.ClientSize = new System.Drawing.Size(895, 613);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
-            this.Name = "viewsociety_membercs";
-            this.Text = "viewsociety_membercs";
+            this.Name = "Member_SocietyLeavecs";
+            this.Text = "Member_SocietyLeavecs";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -128,11 +125,11 @@
 
         #endregion
 
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView societytable;
-        private System.Windows.Forms.DataGridViewButtonColumn join;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView societytable;
+        private System.Windows.Forms.DataGridViewButtonColumn Leave;
     }
 }

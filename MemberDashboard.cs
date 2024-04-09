@@ -12,20 +12,39 @@ namespace AlmonaTech_Society_Managment
 {
     public partial class MemberDashboard : Form
     {
+        public int uid;
         public MemberDashboard()
         {
             InitializeComponent();
         }
 
+        public MemberDashboard(int uID) {
+        
+            this.uid = uID;
+        }
         private void pictureBox1_Click(object sender, EventArgs e) //view events
         {
-
+            Member_viewEvent member_ViewEvent = new Member_viewEvent();
+            member_ViewEvent.Show();
+            this.Hide();
         }
 
         private void view_society_btn_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void join_society_btn_Click(object sender, EventArgs e)
+        {
             viewsociety_membercs viewsociety_Membercs = new viewsociety_membercs();
             viewsociety_Membercs.Show();
+            this.Hide();
+        }
+
+        private void leave_society_btn_Click(object sender, EventArgs e)
+        {
+            LoginSignup loginSignup = new LoginSignup();
+            loginSignup.Show();
             this.Hide();
         }
     }

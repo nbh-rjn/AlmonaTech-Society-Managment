@@ -100,6 +100,12 @@
     <Compile Include="MemberDashboard.Designer.cs">
       <DependentUpon>MemberDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Member_SocietyLeavecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_SocietyLeavecs.Designer.cs">
+      <DependentUpon>Member_SocietyLeavecs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Member_viewEvent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MemberDashboard.resx">
       <DependentUpon>MemberDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_SocietyLeavecs.resx">
+      <DependentUpon>Member_SocietyLeavecs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Member_viewEvent.resx">
       <DependentUpon>Member_viewEvent.cs</DependentUpon>
@@ -218,5 +227,12 @@
   <ItemGroup>
     <None Include="Res\icons8-home-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\icons8-announcement-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
 </Project>

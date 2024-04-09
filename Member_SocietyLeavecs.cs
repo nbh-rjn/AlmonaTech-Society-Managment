@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace AlmonaTech_Society_Managment
 {
-    public partial class ViewAnnouncement : Form
+    public partial class Member_SocietyLeavecs : Form
     {
-        public ViewAnnouncement()
+        public Member_SocietyLeavecs()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-          
         }
     }
 }

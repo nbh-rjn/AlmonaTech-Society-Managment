@@ -62,8 +62,8 @@ namespace AlmonaTech_Society_Managment
 
             //verify
             cn.Open();
-           
-            string q = "select usertype from User_ where fname = @uname AND pass = @pass";
+
+            string q = "select userid, usertype from User_ where fname = @uname and pass = @pass";
 
             SqlCommand cmd = new SqlCommand(q, cn);
             cmd.Parameters.AddWithValue("@uname", uname_lg.Text);
@@ -72,28 +72,30 @@ namespace AlmonaTech_Society_Managment
 
 
             //verification code
+
+            SqlDataReader type = cmd.ExecuteReader();
+
+            if (type.Read())
+            {
+                int userID = type.GetInt32(0); // Retrieve user ID
+                string userType = type.GetString(1); // Retrieve user type
+
+                MessageBox.Show("Login successful!");
+
            
-            string type = Convert.ToString(cmd.ExecuteScalar());
-
-
-
-            if (type != null) // if correct
-              {
-                  MessageBox.Show("Login successful!");
-                
-                if (type=="Lead")
+                if (userType=="Lead")
                 {
-                    Dashboard dashboard = new Dashboard();
+                    Dashboard dashboard = new Dashboard(userID);
                     dashboard.Show();
                     this.Hide();
                 }
-                else if(type=="Mentor")
+                else if(userType == "Mentor")
                 {
                     MentorDashboard mentor = new MentorDashboard();
                     mentor.Show();
                     this.Hide();
                 }
-                else if(type=="Member")
+                else if(userType == "Member")
                 {
                     MemberDashboard member = new MemberDashboard();
                     member.Show();

@@ -34,7 +34,6 @@
             this.signout_btn = new System.Windows.Forms.Button();
             this.viewsociety_details_btn = new System.Windows.Forms.Button();
             this.viewevents_btn = new System.Windows.Forms.Button();
-            this.createevent_btn = new System.Windows.Forms.Button();
             this.ev_name = new System.Windows.Forms.RichTextBox();
             this.desc = new System.Windows.Forms.RichTextBox();
             this.locale = new System.Windows.Forms.RichTextBox();
@@ -58,7 +57,6 @@
             this.panel1.Controls.Add(this.signout_btn);
             this.panel1.Controls.Add(this.viewsociety_details_btn);
             this.panel1.Controls.Add(this.viewevents_btn);
-            this.panel1.Controls.Add(this.createevent_btn);
             this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(228, 759);
@@ -69,7 +67,7 @@
             this.button1.BackColor = System.Drawing.Color.Azure;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Location = new System.Drawing.Point(25, 514);
+            this.button1.Location = new System.Drawing.Point(25, 459);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 86);
             this.button1.TabIndex = 5;
@@ -81,7 +79,7 @@
             this.ance_btn.BackColor = System.Drawing.Color.Azure;
             this.ance_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ance_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.ance_btn.Location = new System.Drawing.Point(25, 402);
+            this.ance_btn.Location = new System.Drawing.Point(25, 325);
             this.ance_btn.Name = "ance_btn";
             this.ance_btn.Size = new System.Drawing.Size(159, 86);
             this.ance_btn.TabIndex = 4;
@@ -107,7 +105,7 @@
             this.viewsociety_details_btn.BackColor = System.Drawing.Color.Azure;
             this.viewsociety_details_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewsociety_details_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.viewsociety_details_btn.Location = new System.Drawing.Point(25, 291);
+            this.viewsociety_details_btn.Location = new System.Drawing.Point(25, 208);
             this.viewsociety_details_btn.Name = "viewsociety_details_btn";
             this.viewsociety_details_btn.Size = new System.Drawing.Size(159, 86);
             this.viewsociety_details_btn.TabIndex = 2;
@@ -120,26 +118,13 @@
             this.viewevents_btn.BackColor = System.Drawing.Color.Azure;
             this.viewevents_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewevents_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.viewevents_btn.Location = new System.Drawing.Point(25, 185);
+            this.viewevents_btn.Location = new System.Drawing.Point(25, 88);
             this.viewevents_btn.Name = "viewevents_btn";
             this.viewevents_btn.Size = new System.Drawing.Size(159, 86);
             this.viewevents_btn.TabIndex = 1;
             this.viewevents_btn.Text = "View Events";
             this.viewevents_btn.UseVisualStyleBackColor = false;
             this.viewevents_btn.Click += new System.EventHandler(this.viewevents_btn_Click);
-            // 
-            // createevent_btn
-            // 
-            this.createevent_btn.BackColor = System.Drawing.Color.Azure;
-            this.createevent_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createevent_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.createevent_btn.Location = new System.Drawing.Point(25, 81);
-            this.createevent_btn.Name = "createevent_btn";
-            this.createevent_btn.Size = new System.Drawing.Size(159, 86);
-            this.createevent_btn.TabIndex = 0;
-            this.createevent_btn.Text = "Create Event";
-            this.createevent_btn.UseVisualStyleBackColor = false;
-            this.createevent_btn.Click += new System.EventHandler(this.createevent_btn_Click);
             // 
             // ev_name
             // 
@@ -297,7 +282,6 @@
         private System.Windows.Forms.Button signout_btn;
         private System.Windows.Forms.Button viewsociety_details_btn;
         private System.Windows.Forms.Button viewevents_btn;
-        private System.Windows.Forms.Button createevent_btn;
         private System.Windows.Forms.RichTextBox ev_name;
         private System.Windows.Forms.RichTextBox desc;
         private System.Windows.Forms.RichTextBox locale;
