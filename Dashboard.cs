@@ -84,5 +84,10 @@ namespace AlmonaTech_Society_Managment
             approveMember.Show();
             this.Hide();
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

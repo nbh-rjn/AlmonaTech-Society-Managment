@@ -149,6 +149,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "ViewAnnouncement";
             this.Text = "ViewAnnouncement";
+            this.Load += new System.EventHandler(this.ViewAnnouncement_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

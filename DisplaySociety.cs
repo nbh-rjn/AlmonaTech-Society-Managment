@@ -23,12 +23,20 @@ namespace AlmonaTech_Society_Managment
 
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-
+        public int uID;
         public DisplaySociety()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
             SocietyGridView();
+        }
+
+        public DisplaySociety(int uid)
+        {
+            InitializeComponent();
+            cn = new SqlConnection(conn);
+            SocietyGridView();
+            this.uID = uid; 
         }
 
         private void societytable_CellContentClick(object sender, DataGridViewCellEventArgs e)

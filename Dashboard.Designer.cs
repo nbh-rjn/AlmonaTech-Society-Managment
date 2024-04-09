@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.ance_btn = new System.Windows.Forms.Button();
             this.signout_btn = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.createevent_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(199, 713);
             this.panel1.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Azure;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button3.Location = new System.Drawing.Point(25, 110);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(159, 86);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Approve Member";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -149,19 +162,6 @@
             this.label1.Text = "Welcome";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Azure;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.button3.Location = new System.Drawing.Point(25, 110);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 86);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Approve Member";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -173,6 +173,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

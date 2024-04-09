@@ -179,6 +179,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "DisplayEvent";
             this.Text = "ReqEvent";
+            this.Load += new System.EventHandler(this.DisplayEvent_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.eventstable)).EndInit();

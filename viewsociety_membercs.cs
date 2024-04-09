@@ -23,7 +23,7 @@ namespace AlmonaTech_Society_Managment
         public int userid;
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-
+        public int uID;
         public viewsociety_membercs()
         {
             InitializeComponent();
@@ -36,6 +36,14 @@ namespace AlmonaTech_Society_Managment
             cn = new SqlConnection(conn);
             this.userid = uid;
             SocietyGridView();
+        }
+
+        public viewsociety_membercs(int uid)
+        {
+            InitializeComponent();
+            cn = new SqlConnection(conn);
+            SocietyGridView();
+            this.uID = uid; 
         }
 
         public void SocietyGridView()
@@ -114,6 +122,11 @@ namespace AlmonaTech_Society_Managment
             MemberDashboard memberDashboard = new MemberDashboard();
             memberDashboard.Show();
             this.Hide();
+        }
+
+        private void viewsociety_membercs_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

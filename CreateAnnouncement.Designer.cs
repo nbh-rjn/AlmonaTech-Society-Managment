@@ -1,6 +1,6 @@
 ﻿namespace AlmonaTech_Society_Managment
 {
-    partial class Form1
+    partial class CreateAnnouncement
     {
         /// <summary>
         /// Required designer variable.
@@ -200,6 +200,7 @@
             this.Controls.Add(this.desc);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
