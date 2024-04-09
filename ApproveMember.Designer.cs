@@ -104,6 +104,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "ApproveMember";
             this.Text = "ApproveMember";
+            this.Load += new System.EventHandler(this.ApproveMember_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homebtn)).EndInit();

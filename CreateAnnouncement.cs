@@ -11,12 +11,27 @@ using System.Windows.Forms;
 
 namespace AlmonaTech_Society_Managment
 {
-    public partial class Form1 : Form
+    public partial class CreateAnnouncement : Form
     {
-        public Form1()
+        public int uid;
+        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+  
+        SqlConnection cn = new SqlConnection();
+        SqlCommand command = new SqlCommand();
+        SqlDataReader dr;
+
+        public CreateAnnouncement()
         {
             InitializeComponent();
         }
+
+        public CreateAnnouncement(int uID)
+        {
+            InitializeComponent();
+            cn = new SqlConnection(conn);
+            this.uid = uID;
+        }
+
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -101,6 +116,11 @@ namespace AlmonaTech_Society_Managment
         }
 
         private void ev_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

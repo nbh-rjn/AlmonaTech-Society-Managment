@@ -18,11 +18,18 @@ namespace AlmonaTech_Society_Managment
         SqlDataReader dr;
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-
+        public int uid;
         public CreateEvent()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
+        }
+
+        public CreateEvent(int uID)
+        {
+            InitializeComponent();
+            cn = new SqlConnection(conn);
+            this.uid = uID; 
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
@@ -94,6 +101,11 @@ namespace AlmonaTech_Society_Managment
     
 
             cn.Close();
+        }
+
+        private void CreateEvent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

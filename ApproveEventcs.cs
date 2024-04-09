@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Windows.Forms.Design;
+using System.Configuration;
 
 
 namespace AlmonaTech_Society_Managment
@@ -21,7 +22,6 @@ namespace AlmonaTech_Society_Managment
 
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-
         public ApproveEventcs()
         {
             InitializeComponent();
@@ -72,6 +72,11 @@ namespace AlmonaTech_Society_Managment
 
 
         private void approveEventGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ApproveEventcs_Load(object sender, EventArgs e)
         {
 
         }

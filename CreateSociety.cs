@@ -24,11 +24,19 @@ namespace AlmonaTech_Society_Managment
 
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public int uid;
 
         public CreateSociety()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
+        }
+
+        public CreateSociety(int uID)
+        {
+            InitializeComponent();
+            cn = new SqlConnection(conn);
+            this.uid = uID;
         }
 
         private void Form2_Load(object sender, EventArgs e)

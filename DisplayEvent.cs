@@ -21,11 +21,21 @@ namespace AlmonaTech_Society_Managment
 
 
         public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public int uid;
+
         public DisplayEvent()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
             EventGridView();
+        }
+
+        public DisplayEvent(int uID)
+        {
+            InitializeComponent();
+            cn = new SqlConnection(conn);
+            EventGridView();
+            this.uid = uID;
         }
 
         private void societytable_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -99,6 +109,11 @@ namespace AlmonaTech_Society_Managment
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
             this.Hide();
+        }
+
+        private void DisplayEvent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
