@@ -44,9 +44,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(422, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 29);
+            this.label1.Size = new System.Drawing.Size(207, 29);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Society Details";
+            this.label1.Text = "Approve Member";
             // 
             // panel2
             // 
