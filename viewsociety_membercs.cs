@@ -38,13 +38,7 @@ namespace AlmonaTech_Society_Managment
             SocietyGridView();
         }
 
-        public viewsociety_membercs(int uid)
-        {
-            InitializeComponent();
-            cn = new SqlConnection(conn);
-            SocietyGridView();
-            this.uID = uid; 
-        }
+    
 
         public void SocietyGridView()
         {
