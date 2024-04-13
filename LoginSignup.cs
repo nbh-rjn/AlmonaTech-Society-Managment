@@ -12,6 +12,7 @@ using System.Data.SqlClient;
 using System.Data.Common;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Collections;
+using System.Configuration;
 
 
 namespace AlmonaTech_Society_Managment
@@ -22,8 +23,9 @@ namespace AlmonaTech_Society_Managment
         SqlCommand command = new SqlCommand();
         SqlDataReader dr;
 
+        //public string conn = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
 
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+       public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
 
 
         public LoginSignup()
