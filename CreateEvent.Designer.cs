@@ -57,7 +57,7 @@
             this.panel1.Controls.Add(this.signout_btn);
             this.panel1.Controls.Add(this.viewsociety_details_btn);
             this.panel1.Controls.Add(this.viewevents_btn);
-            this.panel1.Location = new System.Drawing.Point(-1, -2);
+            this.panel1.Location = new System.Drawing.Point(12, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(228, 759);
             this.panel1.TabIndex = 2;
@@ -252,6 +252,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.blobby1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 721);
             this.Controls.Add(this.add_event_btn);
             this.Controls.Add(this.label6);

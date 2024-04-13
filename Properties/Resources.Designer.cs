@@ -73,6 +73,26 @@ namespace AlmonaTech_Society_Managment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg1 {
+            get {
+                object obj = ResourceManager.GetObject("bg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blobby1 {
+            get {
+                object obj = ResourceManager.GetObject("blobby1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_announcement_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-announcement-50", resourceCulture);
@@ -116,6 +136,16 @@ namespace AlmonaTech_Society_Managment.Properties {
         internal static System.Drawing.Bitmap icons8_view_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-view-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2024_04_13_at_20_03_12 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2024-04-13 at 20.03.12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

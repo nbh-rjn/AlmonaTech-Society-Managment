@@ -168,6 +168,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.WhatsApp_Image_2024_04_13_at_20_03_12;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 698);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
