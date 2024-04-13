@@ -236,6 +236,9 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2024-04-13 at 20.03.12.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\home_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
