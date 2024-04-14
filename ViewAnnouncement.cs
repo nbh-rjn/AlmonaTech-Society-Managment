@@ -24,13 +24,15 @@ namespace AlmonaTech_Society_Managment
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         public ViewAnnouncement(int uid)
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
-            this.uID = uid; 
+            this.uID = uid;
+            this.Icon = Properties.Resources.logo_ico;
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

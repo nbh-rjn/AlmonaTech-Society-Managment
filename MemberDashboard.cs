@@ -16,11 +16,13 @@ namespace AlmonaTech_Society_Managment
         public MemberDashboard()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         public MemberDashboard(int uID) {
         
             this.uid = uID;
+            this.Icon = Properties.Resources.logo_ico;
         }
         private void pictureBox1_Click(object sender, EventArgs e) //view events
         {

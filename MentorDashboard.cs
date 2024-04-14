@@ -15,6 +15,7 @@ namespace AlmonaTech_Society_Managment
         public MentorDashboard()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) // clicking the approve butotn
@@ -23,6 +24,11 @@ namespace AlmonaTech_Society_Managment
             approveEventcs.Show();
             this.Hide();
             
+        }
+
+        private void MentorDashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

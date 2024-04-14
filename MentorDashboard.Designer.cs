@@ -54,6 +54,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "MentorDashboard";
             this.Text = "MentorDashboard";
+            this.Load += new System.EventHandler(this.MentorDashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

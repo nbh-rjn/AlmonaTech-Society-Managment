@@ -25,6 +25,7 @@ namespace AlmonaTech_Society_Managment
             InitializeComponent();
             cn = new SqlConnection(conn);
             EventGridView();
+            this.Icon = Properties.Resources.logo_ico;
         }
 
 

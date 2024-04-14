@@ -28,6 +28,7 @@ namespace AlmonaTech_Society_Managment
             InitializeComponent();
             cn = new SqlConnection(conn);
             SocietyGridView();
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         public Member_SocietyLeavecs(int uid)
@@ -36,6 +37,7 @@ namespace AlmonaTech_Society_Managment
             this.userID = uid;
             cn = new SqlConnection(conn);
             SocietyGridView();
+            this.Icon = Properties.Resources.logo_ico;
         }
         public void SocietyGridView()
         {
