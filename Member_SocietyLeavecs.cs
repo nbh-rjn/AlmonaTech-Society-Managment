@@ -21,7 +21,7 @@ namespace AlmonaTech_Society_Managment
         SqlDataReader dr;
 
 
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
 
         public Member_SocietyLeavecs()
         {
@@ -107,6 +107,11 @@ namespace AlmonaTech_Society_Managment
             MemberDashboard memberDashboard= new MemberDashboard();
             memberDashboard.Show();
             this.Hide();
+        }
+
+        private void Member_SocietyLeavecs_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

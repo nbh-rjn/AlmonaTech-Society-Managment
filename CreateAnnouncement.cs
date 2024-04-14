@@ -14,7 +14,7 @@ namespace AlmonaTech_Society_Managment
     public partial class CreateAnnouncement : Form
     {
         public int uid;
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
   
         SqlConnection cn = new SqlConnection();
         SqlCommand command = new SqlCommand();
@@ -23,6 +23,7 @@ namespace AlmonaTech_Society_Managment
         public CreateAnnouncement()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         public CreateAnnouncement(int uID)
@@ -30,6 +31,7 @@ namespace AlmonaTech_Society_Managment
             InitializeComponent();
             cn = new SqlConnection(conn);
             this.uid = uID;
+            this.Icon = Properties.Resources.logo_ico;
         }
 
 

@@ -17,19 +17,21 @@ namespace AlmonaTech_Society_Managment
         SqlCommand command = new SqlCommand();
         SqlDataReader dr;
 
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public int uid;
         public CreateEvent()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         public CreateEvent(int uID)
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
-            this.uid = uID; 
+            this.uid = uID;
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)

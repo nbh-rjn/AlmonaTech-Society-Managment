@@ -16,7 +16,14 @@ namespace AlmonaTech_Society_Managment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginSignup());
+            //Application.Run(new LoginSignup());
+
+            System.Drawing.Icon appIcon = AlmonaTech_Society_Managment.Properties.Resources.logo_ico; // Replace "YourIconName" with the name of your icon resource
+
+            // Run the main form with the default icon
+            Application.Run(new LoginSignup() { Icon = appIcon });
+
+          
         }
     }
 }

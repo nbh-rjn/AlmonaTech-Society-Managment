@@ -23,13 +23,14 @@ namespace AlmonaTech_Society_Managment
         SqlDataReader dr;
 
 
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public int uid;
 
         public CreateSociety()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         public CreateSociety(int uID)
@@ -37,6 +38,7 @@ namespace AlmonaTech_Society_Managment
             InitializeComponent();
             cn = new SqlConnection(conn);
             this.uid = uID;
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         private void Form2_Load(object sender, EventArgs e)

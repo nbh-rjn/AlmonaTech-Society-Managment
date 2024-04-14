@@ -16,12 +16,14 @@ namespace AlmonaTech_Society_Managment
         public Dashboard()
         {
             InitializeComponent();
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         public Dashboard(int uid)
         {
             InitializeComponent();
             this.uid = uid;
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         private void label1_Click(object sender, EventArgs e)

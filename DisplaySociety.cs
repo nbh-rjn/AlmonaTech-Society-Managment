@@ -22,13 +22,14 @@ namespace AlmonaTech_Society_Managment
         SqlDataReader dr;
 
 
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public int uID;
         public DisplaySociety()
         {
             InitializeComponent();
             cn = new SqlConnection(conn);
             SocietyGridView();
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         public DisplaySociety(int uid)
@@ -36,7 +37,8 @@ namespace AlmonaTech_Society_Managment
             InitializeComponent();
             cn = new SqlConnection(conn);
             SocietyGridView();
-            this.uID = uid; 
+            this.uID = uid;
+            this.Icon = Properties.Resources.logo_ico;
         }
 
         private void societytable_CellContentClick(object sender, DataGridViewCellEventArgs e)
