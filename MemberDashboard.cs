@@ -49,10 +49,5 @@ namespace AlmonaTech_Society_Managment
             loginSignup.Show();
             this.Hide();
         }
-
-        private void MemberDashboard_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

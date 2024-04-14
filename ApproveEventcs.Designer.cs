@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApproveEventcs));
             this.approveEventGrid = new System.Windows.Forms.DataGridView();
             this.approve_btn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label1 = new System.Windows.Forms.Label();
@@ -77,7 +76,6 @@
             this.ClientSize = new System.Drawing.Size(928, 664);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.approveEventGrid);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ApproveEventcs";
             this.Text = "ApproveEventcs";
             this.Load += new System.EventHandler(this.ApproveEventcs_Load);

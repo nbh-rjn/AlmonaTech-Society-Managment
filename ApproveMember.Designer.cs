@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApproveMember));
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.societytable = new System.Windows.Forms.DataGridView();
@@ -103,7 +102,6 @@
             this.Controls.Add(this.homebtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ApproveMember";
             this.Text = "ApproveMember";
             this.Load += new System.EventHandler(this.ApproveMember_Load);

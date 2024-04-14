@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateEvent));
             this.ev_name = new System.Windows.Forms.RichTextBox();
             this.desc = new System.Windows.Forms.RichTextBox();
             this.locale = new System.Windows.Forms.RichTextBox();
@@ -228,7 +227,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreateEvent";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.CreateEvent_Load);

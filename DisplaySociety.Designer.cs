@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplaySociety));
             this.panel1 = new System.Windows.Forms.Panel();
             this.create_ance_btn = new System.Windows.Forms.Button();
             this.ance_btn = new System.Windows.Forms.Button();
@@ -179,7 +178,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DisplaySociety";
             this.Text = "DisplaySociety";
             this.Load += new System.EventHandler(this.DisplaySociety_Load);
