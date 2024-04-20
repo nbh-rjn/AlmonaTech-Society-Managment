@@ -50,7 +50,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightBlue;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(207)))), ((int)(((byte)(223)))));
             this.panel2.Controls.Add(this.societytable);
             this.panel2.Location = new System.Drawing.Point(198, 114);
             this.panel2.Name = "panel2";
@@ -63,7 +63,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.societytable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.societytable.BackgroundColor = System.Drawing.Color.Azure;
+            this.societytable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
             this.societytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.societytable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Approve});
@@ -98,6 +98,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.blobby1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 669);
             this.Controls.Add(this.homebtn);
             this.Controls.Add(this.label1);

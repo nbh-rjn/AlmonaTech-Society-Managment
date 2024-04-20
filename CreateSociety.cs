@@ -58,16 +58,16 @@ namespace AlmonaTech_Society_Managment
             string query = "insert into Society (sname,description_)\r\nvalues (@sname, @desc);";//input in socitytable
 
             SqlCommand cmdSociety = new SqlCommand(query, cn, transaction);
-            cmdSociety.Parameters.AddWithValue("@sname", society_name.Text);
-            cmdSociety.Parameters.AddWithValue("@desc", s_desc.Text);
+          //  cmdSociety.Parameters.AddWithValue("@sname", society_name.Text);
+           // cmdSociety.Parameters.AddWithValue("@desc", s_desc.Text);
 
             cmdSociety.ExecuteNonQuery();
 
             transaction.Commit();
 
             MessageBox.Show("Society Creation Successful!");
-            society_name.Text = "";
-            s_desc.Text = "";
+            //society_name.Text = "";
+            //s_desc.Text = "";
 
             cn.Close();
         }
