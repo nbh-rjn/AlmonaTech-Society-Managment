@@ -72,6 +72,7 @@
             this.label1.Size = new System.Drawing.Size(240, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Approve Event";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 

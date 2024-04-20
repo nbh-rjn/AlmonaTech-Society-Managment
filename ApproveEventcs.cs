@@ -81,5 +81,10 @@ namespace AlmonaTech_Society_Managment
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

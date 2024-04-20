@@ -43,7 +43,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(207)))), ((int)(((byte)(223)))));
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.ance_btn);
@@ -58,9 +58,9 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Azure;
+            this.button3.BackColor = System.Drawing.Color.LightSlateGray;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(25, 110);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 86);
@@ -71,9 +71,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Azure;
+            this.button1.BackColor = System.Drawing.Color.LightSlateGray;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(25, 535);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 86);
@@ -84,9 +84,9 @@
             // 
             // ance_btn
             // 
-            this.ance_btn.BackColor = System.Drawing.Color.Azure;
+            this.ance_btn.BackColor = System.Drawing.Color.LightSlateGray;
             this.ance_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ance_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.ance_btn.ForeColor = System.Drawing.Color.White;
             this.ance_btn.Location = new System.Drawing.Point(25, 421);
             this.ance_btn.Name = "ance_btn";
             this.ance_btn.Size = new System.Drawing.Size(159, 86);
@@ -97,9 +97,9 @@
             // 
             // signout_btn
             // 
-            this.signout_btn.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.signout_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(77)))), ((int)(((byte)(94)))));
             this.signout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signout_btn.ForeColor = System.Drawing.SystemColors.Control;
+            this.signout_btn.ForeColor = System.Drawing.Color.White;
             this.signout_btn.Location = new System.Drawing.Point(25, 643);
             this.signout_btn.Name = "signout_btn";
             this.signout_btn.Size = new System.Drawing.Size(159, 49);
@@ -110,9 +110,9 @@
             // 
             // viewsociety_details_btn
             // 
-            this.viewsociety_details_btn.BackColor = System.Drawing.Color.Azure;
+            this.viewsociety_details_btn.BackColor = System.Drawing.Color.LightSlateGray;
             this.viewsociety_details_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewsociety_details_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.viewsociety_details_btn.ForeColor = System.Drawing.Color.White;
             this.viewsociety_details_btn.Location = new System.Drawing.Point(25, 315);
             this.viewsociety_details_btn.Name = "viewsociety_details_btn";
             this.viewsociety_details_btn.Size = new System.Drawing.Size(159, 86);
@@ -123,9 +123,9 @@
             // 
             // viewevents_btn
             // 
-            this.viewevents_btn.BackColor = System.Drawing.Color.Azure;
+            this.viewevents_btn.BackColor = System.Drawing.Color.LightSlateGray;
             this.viewevents_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewevents_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.viewevents_btn.ForeColor = System.Drawing.Color.White;
             this.viewevents_btn.Location = new System.Drawing.Point(25, 212);
             this.viewevents_btn.Name = "viewevents_btn";
             this.viewevents_btn.Size = new System.Drawing.Size(159, 86);
@@ -136,9 +136,9 @@
             // 
             // createevent_btn
             // 
-            this.createevent_btn.BackColor = System.Drawing.Color.Azure;
+            this.createevent_btn.BackColor = System.Drawing.Color.LightSlateGray;
             this.createevent_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createevent_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.createevent_btn.ForeColor = System.Drawing.Color.White;
             this.createevent_btn.Location = new System.Drawing.Point(25, 15);
             this.createevent_btn.Name = "createevent_btn";
             this.createevent_btn.Size = new System.Drawing.Size(159, 86);
@@ -153,9 +153,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Britannic Bold", 49.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(374, 312);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(77)))), ((int)(((byte)(94)))));
+            this.label1.Location = new System.Drawing.Point(368, 312);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(362, 92);
             this.label1.TabIndex = 1;
@@ -168,7 +169,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Azure;
-            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.WhatsApp_Image_2024_04_13_at_20_03_12;
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.blobby1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(929, 698);
             this.Controls.Add(this.label1);
