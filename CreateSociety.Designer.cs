@@ -29,220 +29,146 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ance_btn = new System.Windows.Forms.Button();
-            this.dash_btn = new System.Windows.Forms.Button();
-            this.signout_btn = new System.Windows.Forms.Button();
-            this.viewsociety_details_btn = new System.Windows.Forms.Button();
-            this.viewevents_btn = new System.Windows.Forms.Button();
-            this.createevent_btn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.society_name = new System.Windows.Forms.TextBox();
-            this.s_desc = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ev_name = new System.Windows.Forms.RichTextBox();
+            this.add_event_btn = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.desc = new System.Windows.Forms.RichTextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightBlue;
-            this.panel1.Controls.Add(this.ance_btn);
-            this.panel1.Controls.Add(this.dash_btn);
-            this.panel1.Controls.Add(this.signout_btn);
-            this.panel1.Controls.Add(this.viewsociety_details_btn);
-            this.panel1.Controls.Add(this.viewevents_btn);
-            this.panel1.Controls.Add(this.createevent_btn);
-            this.panel1.Location = new System.Drawing.Point(-1, -11);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.ev_name);
+            this.panel1.Controls.Add(this.add_event_btn);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.desc);
+            this.panel1.Location = new System.Drawing.Point(152, 102);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(224, 713);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(528, 524);
+            this.panel1.TabIndex = 17;
             // 
-            // ance_btn
+            // label4
             // 
-            this.ance_btn.BackColor = System.Drawing.Color.Azure;
-            this.ance_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ance_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.ance_btn.Location = new System.Drawing.Point(25, 514);
-            this.ance_btn.Name = "ance_btn";
-            this.ance_btn.Size = new System.Drawing.Size(159, 86);
-            this.ance_btn.TabIndex = 5;
-            this.ance_btn.Text = "View Announcements";
-            this.ance_btn.UseVisualStyleBackColor = false;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label4.Location = new System.Drawing.Point(49, 175);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Society Name";
             // 
-            // dash_btn
+            // ev_name
             // 
-            this.dash_btn.BackColor = System.Drawing.Color.Azure;
-            this.dash_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dash_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.dash_btn.Location = new System.Drawing.Point(25, 402);
-            this.dash_btn.Name = "dash_btn";
-            this.dash_btn.Size = new System.Drawing.Size(159, 86);
-            this.dash_btn.TabIndex = 4;
-            this.dash_btn.Text = "Dashboard";
-            this.dash_btn.UseVisualStyleBackColor = false;
-            this.dash_btn.Click += new System.EventHandler(this.dash_btn_Click);
+            this.ev_name.Location = new System.Drawing.Point(179, 164);
+            this.ev_name.Name = "ev_name";
+            this.ev_name.Size = new System.Drawing.Size(270, 31);
+            this.ev_name.TabIndex = 3;
+            this.ev_name.Text = "";
             // 
-            // signout_btn
+            // add_event_btn
             // 
-            this.signout_btn.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.signout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signout_btn.ForeColor = System.Drawing.SystemColors.Control;
-            this.signout_btn.Location = new System.Drawing.Point(25, 643);
-            this.signout_btn.Name = "signout_btn";
-            this.signout_btn.Size = new System.Drawing.Size(159, 49);
-            this.signout_btn.TabIndex = 3;
-            this.signout_btn.Text = "Sign Out";
-            this.signout_btn.UseVisualStyleBackColor = false;
-            this.signout_btn.Click += new System.EventHandler(this.signout_btn_Click);
+            this.add_event_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(115)))), ((int)(((byte)(141)))));
+            this.add_event_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_event_btn.ForeColor = System.Drawing.Color.Azure;
+            this.add_event_btn.Location = new System.Drawing.Point(390, 459);
+            this.add_event_btn.Name = "add_event_btn";
+            this.add_event_btn.Size = new System.Drawing.Size(112, 39);
+            this.add_event_btn.TabIndex = 6;
+            this.add_event_btn.Text = "Request";
+            this.add_event_btn.UseVisualStyleBackColor = false;
             // 
-            // viewsociety_details_btn
+            // label6
             // 
-            this.viewsociety_details_btn.BackColor = System.Drawing.Color.Azure;
-            this.viewsociety_details_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewsociety_details_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.viewsociety_details_btn.Location = new System.Drawing.Point(25, 291);
-            this.viewsociety_details_btn.Name = "viewsociety_details_btn";
-            this.viewsociety_details_btn.Size = new System.Drawing.Size(159, 86);
-            this.viewsociety_details_btn.TabIndex = 2;
-            this.viewsociety_details_btn.Text = "View Society";
-            this.viewsociety_details_btn.UseVisualStyleBackColor = false;
-            this.viewsociety_details_btn.Click += new System.EventHandler(this.viewsociety_details_btn_Click);
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label6.Location = new System.Drawing.Point(162, 56);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(193, 29);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Create Society";
             // 
-            // viewevents_btn
+            // label7
             // 
-            this.viewevents_btn.BackColor = System.Drawing.Color.Azure;
-            this.viewevents_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewevents_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.viewevents_btn.Location = new System.Drawing.Point(25, 185);
-            this.viewevents_btn.Name = "viewevents_btn";
-            this.viewevents_btn.Size = new System.Drawing.Size(159, 86);
-            this.viewevents_btn.TabIndex = 1;
-            this.viewevents_btn.Text = "View Events";
-            this.viewevents_btn.UseVisualStyleBackColor = false;
-            this.viewevents_btn.Click += new System.EventHandler(this.viewevents_btn_Click);
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label7.Location = new System.Drawing.Point(73, 253);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 20);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Description";
             // 
-            // createevent_btn
+            // desc
             // 
-            this.createevent_btn.BackColor = System.Drawing.Color.Azure;
-            this.createevent_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createevent_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.createevent_btn.Location = new System.Drawing.Point(25, 81);
-            this.createevent_btn.Name = "createevent_btn";
-            this.createevent_btn.Size = new System.Drawing.Size(159, 86);
-            this.createevent_btn.TabIndex = 0;
-            this.createevent_btn.Text = "Create Event";
-            this.createevent_btn.UseVisualStyleBackColor = false;
+            this.desc.Location = new System.Drawing.Point(103, 276);
+            this.desc.Name = "desc";
+            this.desc.Size = new System.Drawing.Size(373, 92);
+            this.desc.TabIndex = 4;
+            this.desc.Text = "";
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightBlue;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.s_desc);
-            this.panel2.Controls.Add(this.society_name);
-            this.panel2.Location = new System.Drawing.Point(315, 108);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(400, 421);
-            this.panel2.TabIndex = 2;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(207)))), ((int)(((byte)(223)))));
+            this.panel3.Location = new System.Drawing.Point(186, 92);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(506, 545);
+            this.panel3.TabIndex = 18;
             // 
-            // society_name
+            // pictureBox1
             // 
-            this.society_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.society_name.Location = new System.Drawing.Point(177, 105);
-            this.society_name.Name = "society_name";
-            this.society_name.Size = new System.Drawing.Size(175, 28);
-            this.society_name.TabIndex = 1;
-            // 
-            // s_desc
-            // 
-            this.s_desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.s_desc.Location = new System.Drawing.Point(177, 189);
-            this.s_desc.Name = "s_desc";
-            this.s_desc.Size = new System.Drawing.Size(175, 96);
-            this.s_desc.TabIndex = 4;
-            this.s_desc.Text = "";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 24);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Society Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 224);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 24);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Society Desc";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(260, 339);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 30);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Create";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(71, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(272, 39);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Create A Society";
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(207)))), ((int)(((byte)(223)))));
+            this.pictureBox1.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.home_icon;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(25, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(62, 53);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // CreateSociety
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.blobby1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 691);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
             this.Name = "CreateSociety";
             this.Text = "Create Society";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button ance_btn;
-        private System.Windows.Forms.Button dash_btn;
-        private System.Windows.Forms.Button signout_btn;
-        private System.Windows.Forms.Button viewsociety_details_btn;
-        private System.Windows.Forms.Button viewevents_btn;
-        private System.Windows.Forms.Button createevent_btn;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox s_desc;
-        private System.Windows.Forms.TextBox society_name;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RichTextBox ev_name;
+        private System.Windows.Forms.Button add_event_btn;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RichTextBox desc;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
