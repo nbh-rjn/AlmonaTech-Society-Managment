@@ -119,7 +119,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(49, 112);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 20);
@@ -130,7 +130,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(49, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 20);
@@ -141,7 +141,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(66, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 20);
@@ -152,7 +152,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(69, 145);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 20);
@@ -163,7 +163,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(69, 292);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 20);
@@ -174,7 +174,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(69, 247);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 20);
@@ -185,7 +185,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(69, 198);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 20);
@@ -196,7 +196,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(101, 55);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 29);
@@ -207,7 +207,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(117, 39);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 29);
@@ -218,7 +218,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(71, 357);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 20);
@@ -229,7 +229,7 @@
             // 
             this.ldbtn.AutoSize = true;
             this.ldbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ldbtn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.ldbtn.ForeColor = System.Drawing.Color.White;
             this.ldbtn.Location = new System.Drawing.Point(190, 384);
             this.ldbtn.Name = "ldbtn";
             this.ldbtn.Size = new System.Drawing.Size(61, 22);
@@ -242,7 +242,7 @@
             // 
             this.mbtn.AutoSize = true;
             this.mbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.mbtn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.mbtn.ForeColor = System.Drawing.Color.White;
             this.mbtn.Location = new System.Drawing.Point(190, 356);
             this.mbtn.Name = "mbtn";
             this.mbtn.Size = new System.Drawing.Size(84, 22);
@@ -255,7 +255,7 @@
             // 
             this.mt_btn.AutoSize = true;
             this.mt_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.mt_btn.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.mt_btn.ForeColor = System.Drawing.Color.White;
             this.mt_btn.Location = new System.Drawing.Point(190, 412);
             this.mt_btn.Name = "mt_btn";
             this.mt_btn.Size = new System.Drawing.Size(76, 22);
@@ -290,7 +290,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Azure;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.uname_lg);
@@ -313,7 +314,8 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Azure;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.uname_sn);
             this.panel2.Controls.Add(this.signup_btn);
@@ -341,9 +343,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(859, 638);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.LightCyan;
             this.Name = "LoginSignup";
             this.Text = "Login Signup";

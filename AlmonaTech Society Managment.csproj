@@ -264,6 +264,8 @@
   <ItemGroup>
     <None Include="Resources\AlmonatTech Logo %281%29.ico" />
     <None Include="Resources\logo.bmp" />
+    <None Include="Resources\bg3.png" />
+    <None Include="Resources\button.png" />
     <Content Include="Resources\logo.ico" />
   </ItemGroup>
   <ItemGroup>
