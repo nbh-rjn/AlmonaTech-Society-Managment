@@ -35,7 +35,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.desc = new System.Windows.Forms.RichTextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,7 +42,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.ev_name);
@@ -59,10 +58,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(49, 175);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(37, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 20);
             this.label4.TabIndex = 8;
@@ -70,7 +69,7 @@
             // 
             // ev_name
             // 
-            this.ev_name.Location = new System.Drawing.Point(179, 164);
+            this.ev_name.Location = new System.Drawing.Point(170, 153);
             this.ev_name.Name = "ev_name";
             this.ev_name.Size = new System.Drawing.Size(270, 31);
             this.ev_name.TabIndex = 3;
@@ -79,6 +78,7 @@
             // add_event_btn
             // 
             this.add_event_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(115)))), ((int)(((byte)(141)))));
+            this.add_event_btn.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.add_event_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_event_btn.ForeColor = System.Drawing.Color.Azure;
             this.add_event_btn.Location = new System.Drawing.Point(390, 459);
@@ -91,22 +91,22 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label6.Location = new System.Drawing.Point(162, 56);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 24F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(137, 54);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(193, 29);
+            this.label6.Size = new System.Drawing.Size(233, 46);
             this.label6.TabIndex = 13;
             this.label6.Text = "Create Society";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(73, 253);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(37, 230);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 20);
             this.label7.TabIndex = 12;
@@ -114,19 +114,11 @@
             // 
             // desc
             // 
-            this.desc.Location = new System.Drawing.Point(103, 276);
+            this.desc.Location = new System.Drawing.Point(41, 273);
             this.desc.Name = "desc";
-            this.desc.Size = new System.Drawing.Size(373, 92);
+            this.desc.Size = new System.Drawing.Size(399, 120);
             this.desc.TabIndex = 4;
             this.desc.Text = "";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(207)))), ((int)(((byte)(223)))));
-            this.panel3.Location = new System.Drawing.Point(186, 92);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(506, 545);
-            this.panel3.TabIndex = 18;
             // 
             // pictureBox1
             // 
@@ -144,12 +136,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.blobby1;
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 691);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
             this.Name = "CreateSociety";
             this.Text = "Create Society";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -168,7 +159,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RichTextBox desc;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

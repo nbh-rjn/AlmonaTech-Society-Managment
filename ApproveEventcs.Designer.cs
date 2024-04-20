@@ -61,10 +61,11 @@
             this.pictureBox1.Size = new System.Drawing.Size(62, 53);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // approveEventGrid
             // 
-            this.approveEventGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(247)))));
+            this.approveEventGrid.BackgroundColor = System.Drawing.Color.Lavender;
             this.approveEventGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.approveEventGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.approve_btn});
