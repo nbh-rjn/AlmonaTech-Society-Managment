@@ -41,7 +41,8 @@ namespace AlmonaTech_Society_Managment
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ViewAnnouncement viewAnnouncement = new ViewAnnouncement();
+            viewAnnouncement.Show();
         }
 
         private void createevent_btn_Click(object sender, EventArgs e)

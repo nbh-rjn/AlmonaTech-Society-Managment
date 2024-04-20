@@ -39,7 +39,9 @@
             this.add_event_btn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.desc = new System.Windows.Forms.RichTextBox();
+            this.homebtn = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.homebtn)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,6 +114,7 @@
             this.dashboard__btn.TabIndex = 2;
             this.dashboard__btn.Text = "Dashboard";
             this.dashboard__btn.UseVisualStyleBackColor = false;
+            this.dashboard__btn.Click += new System.EventHandler(this.dashboard__btn_Click);
             // 
             // viewevents_btn
             // 
@@ -179,6 +182,17 @@
             this.desc.Text = "";
             this.desc.TextChanged += new System.EventHandler(this.desc_TextChanged);
             // 
+            // homebtn
+            // 
+            this.homebtn.Image = global::AlmonaTech_Society_Managment.Properties.Resources.icons8_home_50;
+            this.homebtn.Location = new System.Drawing.Point(274, 29);
+            this.homebtn.Name = "homebtn";
+            this.homebtn.Size = new System.Drawing.Size(68, 61);
+            this.homebtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.homebtn.TabIndex = 9;
+            this.homebtn.TabStop = false;
+            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
+            // 
             // CreateAnnouncement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -187,6 +201,7 @@
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1043, 739);
+            this.Controls.Add(this.homebtn);
             this.Controls.Add(this.add_event_btn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.desc);
@@ -195,6 +210,7 @@
             this.Name = "CreateAnnouncement";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.homebtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +228,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox desc;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox homebtn;
     }
 }

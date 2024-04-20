@@ -112,5 +112,12 @@ namespace AlmonaTech_Society_Managment
             loginSignup.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
     }
 }

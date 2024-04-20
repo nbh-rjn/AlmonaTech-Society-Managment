@@ -43,17 +43,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(427, 36);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(399, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 29);
+            this.label1.Size = new System.Drawing.Size(229, 46);
             this.label1.TabIndex = 8;
             this.label1.Text = "Your Societies";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightBlue;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.societytable);
             this.panel2.Location = new System.Drawing.Point(197, 98);
@@ -75,16 +77,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.societytable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.societytable.BackgroundColor = System.Drawing.Color.Azure;
+            this.societytable.BackgroundColor = System.Drawing.Color.Lavender;
             this.societytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.societytable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Leave});
             this.societytable.GridColor = System.Drawing.Color.LightBlue;
-            this.societytable.Location = new System.Drawing.Point(16, 14);
+            this.societytable.Location = new System.Drawing.Point(16, 35);
             this.societytable.Name = "societytable";
             this.societytable.RowHeadersWidth = 51;
             this.societytable.RowTemplate.Height = 24;
-            this.societytable.Size = new System.Drawing.Size(586, 472);
+            this.societytable.Size = new System.Drawing.Size(586, 390);
             this.societytable.TabIndex = 0;
             this.societytable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.societytable_CellContentClick);
             // 
@@ -110,7 +112,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(895, 613);
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
+            this.ClientSize = new System.Drawing.Size(985, 651);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);

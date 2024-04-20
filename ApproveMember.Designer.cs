@@ -89,7 +89,7 @@
             this.homebtn.Image = global::AlmonaTech_Society_Managment.Properties.Resources.icons8_home_50;
             this.homebtn.Location = new System.Drawing.Point(27, 23);
             this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(31, 30);
+            this.homebtn.Size = new System.Drawing.Size(68, 61);
             this.homebtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.homebtn.TabIndex = 8;
             this.homebtn.TabStop = false;

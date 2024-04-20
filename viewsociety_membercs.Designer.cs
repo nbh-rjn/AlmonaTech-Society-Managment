@@ -43,16 +43,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F);
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(373, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 29);
+            this.label1.Size = new System.Drawing.Size(234, 46);
             this.label1.TabIndex = 5;
             this.label1.Text = "Society Details";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LightBlue;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.societytable);
             this.panel2.Location = new System.Drawing.Point(143, 104);
@@ -74,7 +76,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.societytable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.societytable.BackgroundColor = System.Drawing.Color.Azure;
+            this.societytable.BackgroundColor = System.Drawing.Color.Lavender;
             this.societytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.societytable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.join});
@@ -111,6 +113,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
+            this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.ClientSize = new System.Drawing.Size(906, 649);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);

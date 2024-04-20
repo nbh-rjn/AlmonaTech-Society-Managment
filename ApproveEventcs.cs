@@ -89,8 +89,8 @@ namespace AlmonaTech_Society_Managment
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
+            MentorDashboard mentordashboard = new MentorDashboard();
+            mentordashboard.Show();
             this.Hide();
         }
 
