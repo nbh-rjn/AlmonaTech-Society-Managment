@@ -65,7 +65,7 @@ namespace AlmonaTech_Society_Managment
             //verify
             cn.Open();
 
-            string q = "select userid, usertype from User_ where fname = @uname and pass = @pass";
+            string q = "select userid, usertype from User_ where username = @uname and pass = @pass";
 
             SqlCommand cmd = new SqlCommand(q, cn);
             cmd.Parameters.AddWithValue("@uname", uname_lg.Text);
@@ -131,9 +131,11 @@ namespace AlmonaTech_Society_Managment
                 {
                     cn.Open();
                     SqlTransaction transaction = cn.BeginTransaction();
-                    string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
+                    string query = "insert into User_ (username, fname, lname, email, usertype, pass)\r\nvalues (@username, @fname, @lname, @email, @usertype, @pass);";//input in acc table
 
                     SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
+
+                    cmdAccounts.Parameters.AddWithValue("@username", uname_sn.Text);
                     cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
                     cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
                     cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);

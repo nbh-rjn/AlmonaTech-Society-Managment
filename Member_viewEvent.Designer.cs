@@ -97,6 +97,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
+            this.DoubleBuffered = true;
             this.Name = "Member_viewEvent";
             this.Text = "Member_viewEvent";
             this.Load += new System.EventHandler(this.Member_viewEvent_Load);

@@ -69,6 +69,7 @@ namespace AlmonaTech_Society_Managment
         {
             LoginSignup loginSignup= new LoginSignup();
             loginSignup.Show();
+            this.Hide();
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
