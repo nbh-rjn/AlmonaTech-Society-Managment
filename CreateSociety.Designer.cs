@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.ev_name = new System.Windows.Forms.RichTextBox();
+            this.sname = new System.Windows.Forms.RichTextBox();
             this.add_event_btn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.ev_name);
+            this.panel1.Controls.Add(this.sname);
             this.panel1.Controls.Add(this.add_event_btn);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label7);
@@ -65,13 +65,14 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Society Name";
             // 
-            // ev_name
+            // sname
             // 
-            this.ev_name.Location = new System.Drawing.Point(170, 153);
-            this.ev_name.Name = "ev_name";
-            this.ev_name.Size = new System.Drawing.Size(270, 31);
-            this.ev_name.TabIndex = 3;
-            this.ev_name.Text = "";
+            this.sname.Location = new System.Drawing.Point(170, 153);
+            this.sname.Name = "sname";
+            this.sname.Size = new System.Drawing.Size(270, 31);
+            this.sname.TabIndex = 3;
+            this.sname.Text = "";
+            this.sname.TextChanged += new System.EventHandler(this.ev_name_TextChanged);
             // 
             // add_event_btn
             // 
@@ -85,6 +86,7 @@
             this.add_event_btn.TabIndex = 6;
             this.add_event_btn.Text = "Request";
             this.add_event_btn.UseVisualStyleBackColor = false;
+            this.add_event_btn.Click += new System.EventHandler(this.add_event_btn_Click);
             // 
             // label6
             // 
@@ -140,7 +142,7 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox ev_name;
+        private System.Windows.Forms.RichTextBox sname;
         private System.Windows.Forms.Button add_event_btn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

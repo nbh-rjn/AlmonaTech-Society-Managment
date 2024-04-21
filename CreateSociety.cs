@@ -106,5 +106,31 @@ namespace AlmonaTech_Society_Managment
             dashboard.Show();
             this.Hide();
         }
+
+        private void add_event_btn_Click(object sender, EventArgs e)
+        {
+            cn.Open();
+            SqlTransaction transaction = cn.BeginTransaction();
+            string query = "insert into Society (sname,description_)\r\nvalues (@sname, @desc);";//input in socitytable
+
+            SqlCommand cmdSociety = new SqlCommand(query, cn, transaction);
+            cmdSociety.Parameters.AddWithValue("@sname", sname.Text);
+            cmdSociety.Parameters.AddWithValue("@desc", desc.Text);
+
+            cmdSociety.ExecuteNonQuery();
+
+            transaction.Commit();
+
+            MessageBox.Show("Society Creation Successful!");
+            //society_name.Text = "";
+            //s_desc.Text = "";
+
+            cn.Close();
+        }
+
+        private void ev_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
