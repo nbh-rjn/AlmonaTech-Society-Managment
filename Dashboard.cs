@@ -87,5 +87,11 @@ namespace AlmonaTech_Society_Managment
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CreateAnnouncement createAnnouncement= new CreateAnnouncement();
+            createAnnouncement.Show();
+        }
     }
 }

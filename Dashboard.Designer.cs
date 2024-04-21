@@ -38,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,7 @@
             this.signout_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.signout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signout_btn.ForeColor = System.Drawing.Color.White;
-            this.signout_btn.Location = new System.Drawing.Point(720, 573);
+            this.signout_btn.Location = new System.Drawing.Point(733, 631);
             this.signout_btn.Name = "signout_btn";
             this.signout_btn.Size = new System.Drawing.Size(159, 49);
             this.signout_btn.TabIndex = 3;
@@ -65,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Broadway", 49.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(430, 412);
+            this.label1.Location = new System.Drawing.Point(445, 494);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(447, 94);
             this.label1.TabIndex = 1;
@@ -159,6 +160,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.ance_btn);
@@ -170,6 +172,20 @@
             this.panel1.Size = new System.Drawing.Size(208, 713);
             this.panel1.TabIndex = 0;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightSlateGray;
+            this.button2.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(25, 619);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(167, 74);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Make Announcement";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -178,7 +194,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.bg3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(929, 698);
+            this.ClientSize = new System.Drawing.Size(929, 779);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.signout_btn);
@@ -203,5 +219,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
     }
 }

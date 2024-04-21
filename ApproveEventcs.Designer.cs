@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.approveEventGrid = new System.Windows.Forms.DataGridView();
             this.approve_btn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.approveEventGrid)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,22 +44,10 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(363, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 40);
+            this.label1.Size = new System.Drawing.Size(196, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "Approve Event";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(207)))), ((int)(((byte)(223)))));
-            this.pictureBox1.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.home_icon;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(62, 53);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // approveEventGrid
             // 
@@ -106,12 +92,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(928, 664);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "ApproveEventcs";
             this.Text = "ApproveEventcs";
             this.Load += new System.EventHandler(this.ApproveEventcs_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.approveEventGrid)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -121,7 +106,6 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView approveEventGrid;
         private System.Windows.Forms.DataGridViewButtonColumn approve_btn;
         private System.Windows.Forms.Panel panel1;

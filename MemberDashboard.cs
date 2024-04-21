@@ -144,5 +144,12 @@ namespace AlmonaTech_Society_Managment
             Member_SocietyLeavecs member_view = new Member_SocietyLeavecs(uid);
             member_view.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            LoginSignup loginSignup = new LoginSignup();
+            loginSignup.Show();
+            this.Hide();
+        }
     }
 }

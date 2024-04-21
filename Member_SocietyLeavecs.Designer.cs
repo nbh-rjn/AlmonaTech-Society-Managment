@@ -33,11 +33,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.societytable = new System.Windows.Forms.DataGridView();
             this.Leave = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -96,17 +94,6 @@
             this.Leave.MinimumWidth = 6;
             this.Leave.Name = "Leave";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AlmonaTech_Society_Managment.Properties.Resources.icons8_home_50;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // Member_SocietyLeavecs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -114,7 +101,6 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.ClientSize = new System.Drawing.Size(985, 651);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Name = "Member_SocietyLeavecs";
@@ -123,15 +109,12 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;

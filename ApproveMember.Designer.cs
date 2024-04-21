@@ -32,10 +32,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.societytable = new System.Windows.Forms.DataGridView();
             this.Approve = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.homebtn = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homebtn)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,17 +82,6 @@
             this.Approve.MinimumWidth = 6;
             this.Approve.Name = "Approve";
             // 
-            // homebtn
-            // 
-            this.homebtn.Image = global::AlmonaTech_Society_Managment.Properties.Resources.icons8_home_50;
-            this.homebtn.Location = new System.Drawing.Point(27, 23);
-            this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(68, 61);
-            this.homebtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.homebtn.TabIndex = 8;
-            this.homebtn.TabStop = false;
-            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
-            // 
             // ApproveMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -103,15 +90,14 @@
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 669);
-            this.Controls.Add(this.homebtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
+            this.DoubleBuffered = true;
             this.Name = "ApproveMember";
             this.Text = "ApproveMember";
             this.Load += new System.EventHandler(this.ApproveMember_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.societytable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homebtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +109,5 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView societytable;
         private System.Windows.Forms.DataGridViewButtonColumn Approve;
-        private System.Windows.Forms.PictureBox homebtn;
     }
 }
