@@ -36,7 +36,6 @@ namespace AlmonaTech_Society_Managment
             CreateSociety createSociety = new CreateSociety();
             createSociety.Show();
 
-            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,7 +48,6 @@ namespace AlmonaTech_Society_Managment
         {
             CreateEvent reqEvent = new CreateEvent();
             reqEvent.Show();
-            this.Hide();
 
         }
 
@@ -57,7 +55,6 @@ namespace AlmonaTech_Society_Managment
         {
             DisplayEvent displayEvent= new DisplayEvent();
             displayEvent.Show();
-            this.Hide();
 
         }
 
@@ -66,14 +63,12 @@ namespace AlmonaTech_Society_Managment
             DisplaySociety displayEvent=new DisplaySociety();
             displayEvent.Show();
 
-            this.Hide();
         }
 
         private void signout_btn_Click(object sender, EventArgs e)
         {
             LoginSignup loginSignup= new LoginSignup();
             loginSignup.Show();
-            this.Hide();
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
@@ -85,7 +80,6 @@ namespace AlmonaTech_Society_Managment
         {
             ApproveMember approveMember= new ApproveMember();
             approveMember.Show();
-            this.Hide();
         }
 
         private void Dashboard_Load(object sender, EventArgs e)

@@ -25,7 +25,7 @@ namespace AlmonaTech_Society_Managment
 
         public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public int uid;
-
+        
         public CreateSociety()
         {
             InitializeComponent();
