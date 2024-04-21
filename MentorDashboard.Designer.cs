@@ -160,7 +160,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.bg3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1007, 645);
+            this.ClientSize = new System.Drawing.Size(1042, 653);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.signout_btn);
             this.Controls.Add(this.panel1);

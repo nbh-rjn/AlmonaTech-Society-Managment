@@ -47,11 +47,11 @@
             this.signout_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(77)))), ((int)(((byte)(94)))));
             this.signout_btn.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.signout_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.signout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.signout_btn.ForeColor = System.Drawing.Color.White;
-            this.signout_btn.Location = new System.Drawing.Point(733, 631);
+            this.signout_btn.Location = new System.Drawing.Point(924, 638);
             this.signout_btn.Name = "signout_btn";
-            this.signout_btn.Size = new System.Drawing.Size(159, 49);
+            this.signout_btn.Size = new System.Drawing.Size(176, 61);
             this.signout_btn.TabIndex = 3;
             this.signout_btn.Text = "Sign Out";
             this.signout_btn.UseVisualStyleBackColor = false;
@@ -66,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Broadway", 49.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(445, 494);
+            this.label1.Location = new System.Drawing.Point(653, 486);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(447, 94);
             this.label1.TabIndex = 1;
@@ -167,7 +167,7 @@
             this.panel1.Controls.Add(this.viewsociety_details_btn);
             this.panel1.Controls.Add(this.viewevents_btn);
             this.panel1.Controls.Add(this.createevent_btn);
-            this.panel1.Location = new System.Drawing.Point(61, 30);
+            this.panel1.Location = new System.Drawing.Point(61, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(208, 713);
             this.panel1.TabIndex = 0;
@@ -194,7 +194,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.bg3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(929, 779);
+            this.ClientSize = new System.Drawing.Size(1157, 753);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.signout_btn);

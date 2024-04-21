@@ -40,7 +40,7 @@
             this.add_event_btn.Cursor = System.Windows.Forms.Cursors.Cross;
             this.add_event_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_event_btn.ForeColor = System.Drawing.Color.White;
-            this.add_event_btn.Location = new System.Drawing.Point(730, 570);
+            this.add_event_btn.Location = new System.Drawing.Point(681, 555);
             this.add_event_btn.Name = "add_event_btn";
             this.add_event_btn.Size = new System.Drawing.Size(159, 49);
             this.add_event_btn.TabIndex = 17;
@@ -55,7 +55,7 @@
             this.label6.Cursor = System.Windows.Forms.Cursors.Cross;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(324, 59);
+            this.label6.Location = new System.Drawing.Point(288, 56);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(350, 46);
             this.label6.TabIndex = 25;
@@ -64,7 +64,7 @@
             // 
             // desc
             // 
-            this.desc.Location = new System.Drawing.Point(139, 140);
+            this.desc.Location = new System.Drawing.Point(90, 137);
             this.desc.Name = "desc";
             this.desc.Size = new System.Drawing.Size(750, 371);
             this.desc.TabIndex = 15;
@@ -78,7 +78,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(992, 657);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.add_event_btn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.desc);

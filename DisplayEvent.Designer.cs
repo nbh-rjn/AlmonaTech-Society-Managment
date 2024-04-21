@@ -69,7 +69,7 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.eventstable);
-            this.panel2.Location = new System.Drawing.Point(207, 48);
+            this.panel2.Location = new System.Drawing.Point(167, 49);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(621, 563);
             this.panel2.TabIndex = 4;
@@ -82,7 +82,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(978, 653);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.Name = "DisplayEvent";

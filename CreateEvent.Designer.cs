@@ -191,7 +191,7 @@
             this.panel1.Controls.Add(this.locale);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.date_);
-            this.panel1.Location = new System.Drawing.Point(147, 76);
+            this.panel1.Location = new System.Drawing.Point(160, 49);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(584, 569);
             this.panel1.TabIndex = 15;
@@ -204,7 +204,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(837, 721);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Name = "CreateEvent";

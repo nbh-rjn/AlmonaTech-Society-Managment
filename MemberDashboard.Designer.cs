@@ -157,7 +157,7 @@
             // 
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.bg3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1039, 636);
+            this.ClientSize = new System.Drawing.Size(1042, 653);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);

@@ -44,7 +44,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(399, 49);
+            this.label1.Location = new System.Drawing.Point(362, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(229, 46);
             this.label1.TabIndex = 8;
@@ -56,7 +56,7 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.societytable);
-            this.panel2.Location = new System.Drawing.Point(197, 98);
+            this.panel2.Location = new System.Drawing.Point(171, 98);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(621, 502);
             this.panel2.TabIndex = 7;
@@ -100,7 +100,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
-            this.ClientSize = new System.Drawing.Size(985, 651);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Name = "Member_SocietyLeavecs";

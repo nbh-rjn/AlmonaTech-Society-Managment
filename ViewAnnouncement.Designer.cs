@@ -37,7 +37,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1086, 697);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.DoubleBuffered = true;
             this.Name = "ViewAnnouncement";
             this.Text = "ViewAnnouncement";

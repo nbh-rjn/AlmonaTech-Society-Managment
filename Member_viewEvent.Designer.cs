@@ -39,7 +39,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.eventstable);
-            this.panel2.Location = new System.Drawing.Point(215, 123);
+            this.panel2.Location = new System.Drawing.Point(146, 110);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(620, 509);
             this.panel2.TabIndex = 5;
@@ -66,7 +66,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 24F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(442, 74);
+            this.label1.Location = new System.Drawing.Point(351, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 46);
             this.label1.TabIndex = 7;
@@ -79,7 +79,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1027, 711);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;

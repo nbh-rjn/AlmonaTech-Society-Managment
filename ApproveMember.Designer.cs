@@ -89,7 +89,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(936, 669);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;

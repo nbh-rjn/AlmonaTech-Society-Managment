@@ -48,7 +48,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.desc);
-            this.panel1.Location = new System.Drawing.Point(152, 102);
+            this.panel1.Location = new System.Drawing.Point(206, 74);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(528, 524);
             this.panel1.TabIndex = 17;
@@ -125,7 +125,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 691);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Name = "CreateSociety";

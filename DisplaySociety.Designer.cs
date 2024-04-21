@@ -40,7 +40,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.societytable);
-            this.panel2.Location = new System.Drawing.Point(157, 128);
+            this.panel2.Location = new System.Drawing.Point(136, 114);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(648, 505);
             this.panel2.TabIndex = 2;
@@ -54,7 +54,7 @@
             this.societytable.BackgroundColor = System.Drawing.Color.Lavender;
             this.societytable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.societytable.GridColor = System.Drawing.Color.LightBlue;
-            this.societytable.Location = new System.Drawing.Point(3, 3);
+            this.societytable.Location = new System.Drawing.Point(16, 17);
             this.societytable.Name = "societytable";
             this.societytable.RowHeadersWidth = 51;
             this.societytable.RowTemplate.Height = 24;
@@ -79,7 +79,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(921, 696);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.Color.White;

@@ -80,7 +80,7 @@
             this.panel1.ForeColor = System.Drawing.Color.Chocolate;
             this.panel1.Location = new System.Drawing.Point(139, 97);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(702, 494);
+            this.panel1.Size = new System.Drawing.Size(700, 500);
             this.panel1.TabIndex = 2;
             // 
             // ApproveEventcs
@@ -90,7 +90,7 @@
             this.BackColor = System.Drawing.Color.Azure;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(928, 664);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;

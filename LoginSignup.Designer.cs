@@ -299,7 +299,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.login_btn);
             this.panel1.Controls.Add(this.pword_lg);
-            this.panel1.Location = new System.Drawing.Point(41, 145);
+            this.panel1.Location = new System.Drawing.Point(93, 147);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 283);
             this.panel1.TabIndex = 24;
@@ -332,7 +332,7 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(442, 51);
+            this.panel2.Location = new System.Drawing.Point(472, 51);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(346, 521);
             this.panel2.TabIndex = 25;
@@ -345,7 +345,7 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.BackgroundImage = global::AlmonaTech_Society_Managment.Properties.Resources.button;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(859, 638);
+            this.ClientSize = new System.Drawing.Size(932, 653);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
