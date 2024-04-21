@@ -23,7 +23,7 @@ namespace AlmonaTech_Society_Managment
         SqlDataReader dr;
 
 
-        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
 
 
         public LoginSignup()
@@ -127,88 +127,135 @@ namespace AlmonaTech_Society_Managment
             if (mbtn.Checked)
             {
 
+                try
+                {
+                    cn.Open();
+                    SqlTransaction transaction = cn.BeginTransaction();
+                    string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
 
-                cn.Open();
-                SqlTransaction transaction = cn.BeginTransaction();
-                string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
-
-                SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
-                cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@usertype", "Member");
-                cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
-
-
-                cmdAccounts.ExecuteNonQuery();
-
-                transaction.Commit();
+                    SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
+                    cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@usertype", "Member");
+                    cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
 
 
+                    cmdAccounts.ExecuteNonQuery();
 
-                MessageBox.Show("Signup successful!");
-                cn.Close();
+                    transaction.Commit();
 
 
-                MemberDashboard dashboard_ = new MemberDashboard();
-                dashboard_.Show();
-                this.Hide();
+
+                    MessageBox.Show("Signup successful!");
+                    cn.Close();
+
+
+                    MemberDashboard dashboard_ = new MemberDashboard();
+                    dashboard_.Show();
+                    this.Hide();
+                }
+                catch (SqlException ex)
+                {
+                    if (ex.Number == 2627 || ex.Number == 547)
+                    {
+                        MessageBox.Show("Incorrect Input. Make sure email is correct. \n Password is alphanumeric and at least 8 characters long \n Names are alphabetic");
+                        cn.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("An error occurred while signing up: " + ex.Message);
+                        cn.Close();
+                    }
+                }
             }
             else if(ldbtn.Checked)
             {
-                cn.Open();
-                SqlTransaction transaction = cn.BeginTransaction();
-                string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
+                try
+                {
+                    cn.Open();
+                    SqlTransaction transaction = cn.BeginTransaction();
+                    string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
 
-                SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
-                cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@usertype", "Lead");
-                cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
-
-
-                cmdAccounts.ExecuteNonQuery();
-
-                transaction.Commit();
+                    SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
+                    cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@usertype", "Lead");
+                    cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
 
 
+                    cmdAccounts.ExecuteNonQuery();
 
-                MessageBox.Show("Signup successful!");
-                cn.Close();
+                    transaction.Commit();
 
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-                this.Hide();
+
+
+                    MessageBox.Show("Signup successful!");
+                    cn.Close();
+
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide();
+                }
+                catch(SqlException ex)
+                {
+                    if (ex.Number == 2627 || ex.Number == 547)
+                    {
+                        MessageBox.Show("Incorrect Input. Make sure email is correct. \n Password is alphanumeric and at least 8 characters long \n Names are alphabetic");
+                        cn.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("An error occurred while signing up: " + ex.Message);
+                        cn.Close();
+                    }
+                }
             }
             else if(mt_btn.Checked)
             {
+                try
+                {
+                    cn.Open();
+                    SqlTransaction transaction = cn.BeginTransaction();
+                    string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
 
-                cn.Open();
-                SqlTransaction transaction = cn.BeginTransaction();
-                string query = "insert into User_ (fname, lname, email, usertype, pass)\r\nvalues (@fname, @lname, @email, @usertype, @pass);";//input in acc table
-
-                SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
-                cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
-                cmdAccounts.Parameters.AddWithValue("@usertype", "Mentor");
-                cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
-
-
-                cmdAccounts.ExecuteNonQuery();
-
-                transaction.Commit();
+                    SqlCommand cmdAccounts = new SqlCommand(query, cn, transaction);
+                    cmdAccounts.Parameters.AddWithValue("@fname", fname_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@lname", lname_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@email", em_sn.Text);
+                    cmdAccounts.Parameters.AddWithValue("@usertype", "Mentor");
+                    cmdAccounts.Parameters.AddWithValue("@pass", pword_sn.Text);
 
 
+                    cmdAccounts.ExecuteNonQuery();
 
-                MessageBox.Show("Signup successful!");
-                cn.Close();
+                    transaction.Commit();
 
 
-                MentorDashboard md=new MentorDashboard();
-                md.Show();
-                this.Hide();
+
+                    MessageBox.Show("Signup successful!");
+                    cn.Close();
+
+
+                    MentorDashboard md = new MentorDashboard();
+                    md.Show();
+                    this.Hide();
+                }
+                catch (SqlException ex)
+                {
+                    if (ex.Number == 2627 || ex.Number == 547)
+                    {
+                        MessageBox.Show("Incorrect Input. Make sure email is correct. \n Password is alphanumeric and at least 8 characters long \n Names are alphabetic");
+                        cn.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("An error occurred while signing up: " + ex.Message);
+                        cn.Close();
+                    }
+                }
+
             }
            
            
