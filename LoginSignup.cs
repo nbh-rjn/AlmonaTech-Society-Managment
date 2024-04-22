@@ -23,8 +23,8 @@ namespace AlmonaTech_Society_Managment
         SqlDataReader dr;
 
 
-        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-
+       // public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn= "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
 
         public LoginSignup()
         {
@@ -93,13 +93,13 @@ namespace AlmonaTech_Society_Managment
                 }
                 else if(userType == "Mentor")
                 {
-                    MentorDashboard mentor = new MentorDashboard();
+                    MentorDashboard mentor = new MentorDashboard(userID);
                     mentor.Show();
                     this.Hide();
                 }
                 else if(userType == "Member")
                 {
-                    MemberDashboard member = new MemberDashboard();
+                    MemberDashboard member = new MemberDashboard(userID);
                     member.Show();
                     this.Hide();
                 }

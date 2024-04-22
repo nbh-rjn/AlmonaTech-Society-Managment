@@ -35,6 +35,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.desc = new System.Windows.Forms.RichTextBox();
+            this.labellck = new System.Windows.Forms.Label();
+            this.MentorID = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,6 +44,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.labellck);
+            this.panel1.Controls.Add(this.MentorID);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.sname);
             this.panel1.Controls.Add(this.add_event_btn);
@@ -106,7 +110,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(37, 230);
+            this.label7.Location = new System.Drawing.Point(37, 280);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 20);
             this.label7.TabIndex = 12;
@@ -114,11 +118,32 @@
             // 
             // desc
             // 
-            this.desc.Location = new System.Drawing.Point(41, 273);
+            this.desc.Location = new System.Drawing.Point(65, 318);
             this.desc.Name = "desc";
             this.desc.Size = new System.Drawing.Size(399, 120);
             this.desc.TabIndex = 4;
             this.desc.Text = "";
+            // 
+            // labellck
+            // 
+            this.labellck.AutoSize = true;
+            this.labellck.BackColor = System.Drawing.Color.Transparent;
+            this.labellck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labellck.ForeColor = System.Drawing.Color.White;
+            this.labellck.Location = new System.Drawing.Point(37, 223);
+            this.labellck.Name = "labellck";
+            this.labellck.Size = new System.Drawing.Size(83, 20);
+            this.labellck.TabIndex = 15;
+            this.labellck.Text = "Mentor ID";
+            this.labellck.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // MentorID
+            // 
+            this.MentorID.Location = new System.Drawing.Point(170, 223);
+            this.MentorID.Name = "MentorID";
+            this.MentorID.Size = new System.Drawing.Size(270, 31);
+            this.MentorID.TabIndex = 14;
+            this.MentorID.Text = "";
             // 
             // CreateSociety
             // 
@@ -147,5 +172,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RichTextBox desc;
+        private System.Windows.Forms.Label labellck;
+        private System.Windows.Forms.RichTextBox MentorID;
     }
 }

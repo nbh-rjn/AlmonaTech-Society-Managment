@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,22 +13,30 @@ namespace AlmonaTech_Society_Managment
 {
     public partial class MentorDashboard : Form
     {
+        public int uid;
         public MentorDashboard()
         {
             InitializeComponent();
             this.Icon = Properties.Resources.logo_ico;
         }
-        /*
-        private void pictureBox1_Click(object sender, EventArgs e) // clicking the approve butotn
-        {
-            ApproveEventcs approveEventcs = new ApproveEventcs();
-            approveEventcs.Show();
-            this.Hide();
-            
-        }
-        */
 
-        private void MentorDashboard_Load(object sender, EventArgs e)
+        public MentorDashboard(int uID)
+        {
+            InitializeComponent();
+            this.uid = uID;
+            this.Icon = Properties.Resources.logo_ico;
+        }
+            /*
+            private void pictureBox1_Click(object sender, EventArgs e) // clicking the approve butotn
+            {
+                ApproveEventcs approveEventcs = new ApproveEventcs();
+                approveEventcs.Show();
+                this.Hide();
+
+            }
+            */
+
+            private void MentorDashboard_Load(object sender, EventArgs e)
         {
 
         }

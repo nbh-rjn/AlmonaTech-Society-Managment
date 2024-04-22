@@ -33,7 +33,7 @@ namespace AlmonaTech_Society_Managment
 
         private void ance_btn_Click(object sender, EventArgs e) //this is the create society button TT
         {
-            CreateSociety createSociety = new CreateSociety();
+            CreateSociety createSociety = new CreateSociety(uid);
             createSociety.Show();
 
         }

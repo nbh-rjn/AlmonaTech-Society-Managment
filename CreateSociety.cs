@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data.Common;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Collections;
+using System.Diagnostics;
 
 
 namespace AlmonaTech_Society_Managment
@@ -22,8 +23,8 @@ namespace AlmonaTech_Society_Managment
         SqlCommand command = new SqlCommand();
         SqlDataReader dr;
 
-
-        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+       // public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public int uid;
         
         public CreateSociety()
@@ -53,18 +54,35 @@ namespace AlmonaTech_Society_Managment
 
         private void button2_Click(object sender, EventArgs e) //create socity button
         {
+            MessageBox.Show(uid.ToString());
             cn.Open();
             SqlTransaction transaction = cn.BeginTransaction();
-            string query = "insert into Society (sname,description_)\r\nvalues (@sname, @desc);";//input in socitytable
+            string query = "insert into Society (sname,description_,leadID,mentorID)\r\nvalues (@sname, @desc,@uid,@mentorID);";//input in socitytable
 
+
+            Debug.WriteLine("uid: " + uid);
+            Debug.WriteLine("mentorID: " + labellck.Text);
             SqlCommand cmdSociety = new SqlCommand(query, cn, transaction);
-          //  cmdSociety.Parameters.AddWithValue("@sname", society_name.Text);
-           // cmdSociety.Parameters.AddWithValue("@desc", s_desc.Text);
+           cmdSociety.Parameters.AddWithValue("@sname", sname.Text);
+           cmdSociety.Parameters.AddWithValue("@desc", desc.Text);
+           cmdSociety.Parameters.AddWithValue("@uid", uid);
 
+            // Parse MentorID as a number (assuming it's an integer)
+            if (int.TryParse(MentorID.Text, out int mentorIDValue))
+            {
+                cmdSociety.Parameters.AddWithValue("@mentorID", mentorIDValue);
+            }
+            else
+            {
+                // Handle invalid input for MentorID (optional)
+                MessageBox.Show("MentorID must be a valid number.");
+          }
+           
             cmdSociety.ExecuteNonQuery();
 
             transaction.Commit();
 
+      
             MessageBox.Show("Society Creation Successful!");
             //society_name.Text = "";
             //s_desc.Text = "";
@@ -109,17 +127,34 @@ namespace AlmonaTech_Society_Managment
 
         private void add_event_btn_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(uid.ToString());
             cn.Open();
             SqlTransaction transaction = cn.BeginTransaction();
-            string query = "insert into Society (sname,description_)\r\nvalues (@sname, @desc);";//input in socitytable
+            string query = "insert into Society (sname,description_,leadID,mentorID)\r\nvalues (@sname, @desc,@uid,@mentorID);";//input in socitytable
 
+
+            Debug.WriteLine("uid: " + uid);
+            Debug.WriteLine("mentorID: " + labellck.Text);
             SqlCommand cmdSociety = new SqlCommand(query, cn, transaction);
             cmdSociety.Parameters.AddWithValue("@sname", sname.Text);
             cmdSociety.Parameters.AddWithValue("@desc", desc.Text);
+            cmdSociety.Parameters.AddWithValue("@uid", uid);
+
+            // Parse MentorID as a number (assuming it's an integer)
+            if (int.TryParse(MentorID.Text, out int mentorIDValue))
+            {
+                cmdSociety.Parameters.AddWithValue("@mentorID", mentorIDValue);
+            }
+            else
+            {
+                // Handle invalid input for MentorID (optional)
+                MessageBox.Show("MentorID must be a valid number.");
+            }
 
             cmdSociety.ExecuteNonQuery();
 
             transaction.Commit();
+
 
             MessageBox.Show("Society Creation Successful!");
             //society_name.Text = "";
@@ -129,6 +164,11 @@ namespace AlmonaTech_Society_Managment
         }
 
         private void ev_name_TextChanged(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }

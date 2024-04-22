@@ -22,8 +22,9 @@ namespace AlmonaTech_Society_Managment
 
         public int userid;
 
-        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-        public int uID;
+        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+      //  public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+       
         public viewsociety_membercs()
         {
             InitializeComponent();
@@ -96,14 +97,14 @@ namespace AlmonaTech_Society_Managment
                 string status = "Requested";
 
                 // Insert data into the member_ table
-                string q = "insert into member_ (societyID, sname, status_) values (@societyID, @sname, @status)";
+                string q = "insert into memberRequest (userID,societyID, status_) values (@uid,@societyID,@status)";
 
                 using (cn)
                 {
                     cn.Open();
                     SqlCommand cmd = new SqlCommand(q, cn);
+                    cmd.Parameters.AddWithValue("@uid", this.userid);
                     cmd.Parameters.AddWithValue("@societyID", societyID);
-                    cmd.Parameters.AddWithValue("@sname", sname);
                     cmd.Parameters.AddWithValue("@status", status);
                     cmd.ExecuteNonQuery();
                     cn.Close();

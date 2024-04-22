@@ -20,7 +20,8 @@ namespace AlmonaTech_Society_Managment
         }
 
         public MemberDashboard(int uID) {
-        
+
+            InitializeComponent();
             this.uid = uID;
             this.Icon = Properties.Resources.logo_ico;
         }
