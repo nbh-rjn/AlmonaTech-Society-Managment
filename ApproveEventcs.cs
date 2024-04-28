@@ -42,7 +42,7 @@ namespace AlmonaTech_Society_Managment
                 // Open connection
 
                 cn.Open();
-                string q = "select * from eventRequest";
+                string q = "SELECT er.*\r\nFROM eventRequest er\r\nJOIN User_ u ON er.userID = u.userid\r\nJOIN Society s ON u.userid = s.mentorID\r\nWHERE s.mentorID = @mentorID;\r\n";
 
                 SqlCommand cmd = new SqlCommand(q, cn);
 
