@@ -84,6 +84,7 @@
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "DisplaySociety";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DisplaySociety";
             this.Load += new System.EventHandler(this.DisplaySociety_Load);
             this.panel2.ResumeLayout(false);

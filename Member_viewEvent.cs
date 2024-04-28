@@ -19,7 +19,7 @@ namespace AlmonaTech_Society_Managment
 
 
         public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-      //  public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        //public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public Member_viewEvent()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace AlmonaTech_Society_Managment
                 // Open connection
 
                 cn.Open();
-                string q = "select * from eventRequest";
+                string q = "SELECT er.eventName AS 'Event', er.description_ AS 'Description', er.date_ AS 'Date', s.sname AS 'Society'\r\nFROM eventRequest er\r\nJOIN society s ON er.societyID = s.societyID;";
 
                 SqlCommand cmd = new SqlCommand(q, cn);
 

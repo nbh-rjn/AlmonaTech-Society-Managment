@@ -95,6 +95,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "ApproveEventcs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ApproveEventcs";
             this.Load += new System.EventHandler(this.ApproveEventcs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.approveEventGrid)).EndInit();

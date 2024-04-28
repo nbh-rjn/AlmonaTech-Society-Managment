@@ -107,6 +107,7 @@
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.Name = "viewsociety_membercs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "viewsociety_membercs";
             this.Load += new System.EventHandler(this.viewsociety_membercs_Load);
             this.panel2.ResumeLayout(false);

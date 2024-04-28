@@ -104,6 +104,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Name = "Member_SocietyLeavecs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Member_SocietyLeavecs";
             this.Load += new System.EventHandler(this.Member_SocietyLeavecs_Load);
             this.panel2.ResumeLayout(false);

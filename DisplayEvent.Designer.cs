@@ -86,6 +86,7 @@
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.Name = "DisplayEvent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReqEvent";
             this.Load += new System.EventHandler(this.DisplayEvent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.eventstable)).EndInit();

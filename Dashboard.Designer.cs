@@ -51,7 +51,7 @@
             this.signout_btn.ForeColor = System.Drawing.Color.White;
             this.signout_btn.Location = new System.Drawing.Point(924, 638);
             this.signout_btn.Name = "signout_btn";
-            this.signout_btn.Size = new System.Drawing.Size(176, 61);
+            this.signout_btn.Size = new System.Drawing.Size(170, 75);
             this.signout_btn.TabIndex = 3;
             this.signout_btn.Text = "Sign Out";
             this.signout_btn.UseVisualStyleBackColor = false;
@@ -97,7 +97,7 @@
             this.viewevents_btn.Name = "viewevents_btn";
             this.viewevents_btn.Size = new System.Drawing.Size(167, 72);
             this.viewevents_btn.TabIndex = 1;
-            this.viewevents_btn.Text = "View Events";
+            this.viewevents_btn.Text = "Events";
             this.viewevents_btn.UseVisualStyleBackColor = false;
             this.viewevents_btn.Click += new System.EventHandler(this.viewevents_btn_Click);
             // 
@@ -111,7 +111,7 @@
             this.viewsociety_details_btn.Name = "viewsociety_details_btn";
             this.viewsociety_details_btn.Size = new System.Drawing.Size(167, 72);
             this.viewsociety_details_btn.TabIndex = 2;
-            this.viewsociety_details_btn.Text = "View Society";
+            this.viewsociety_details_btn.Text = " Societies";
             this.viewsociety_details_btn.UseVisualStyleBackColor = false;
             this.viewsociety_details_btn.Click += new System.EventHandler(this.viewsociety_details_btn_Click);
             // 
@@ -139,7 +139,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 76);
             this.button1.TabIndex = 5;
-            this.button1.Text = "View Announcements";
+            this.button1.Text = "Announcements";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -200,6 +200,7 @@
             this.Controls.Add(this.signout_btn);
             this.DoubleBuffered = true;
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);

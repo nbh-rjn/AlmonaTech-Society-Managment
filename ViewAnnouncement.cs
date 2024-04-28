@@ -17,8 +17,8 @@ namespace AlmonaTech_Society_Managment
         SqlCommand command = new SqlCommand();
         SqlDataReader dr;
 
-       // public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        //public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public int uID;
 
         public ViewAnnouncement()
@@ -26,6 +26,8 @@ namespace AlmonaTech_Society_Managment
             InitializeComponent();
             cn = new SqlConnection(conn);
             this.Icon = Properties.Resources.logo_ico;
+            AnnouncementGridView();
+
         }
 
         public ViewAnnouncement(int uid)
@@ -34,6 +36,7 @@ namespace AlmonaTech_Society_Managment
             cn = new SqlConnection(conn);
             this.uID = uid;
             this.Icon = Properties.Resources.logo_ico;
+            AnnouncementGridView();
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -45,7 +48,41 @@ namespace AlmonaTech_Society_Managment
           
         }
 
+        public void AnnouncementGridView()
+        {
+            try
+            {
+                cn.Open();
+
+                string q = "SELECT a.announcementTitle AS 'Title', a.announcementDesc AS 'Announcement', a.announcementDateTime AS 'Date'\r\nFROM announcements a\r\nJOIN society s ON a.userID = s.leadID\r\nJOIN member_ m ON s.societyID = m.societyID\r\nWHERE m.userID = @uID;\r\n";
+
+                SqlCommand cmd = new SqlCommand(q, cn);
+
+                cmd.Parameters.AddWithValue("@uID", uID);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                DataTable dt = new DataTable();
+
+                dt.Load(reader);
+
+                announcementstable.DataSource = dt;
+
+                reader.Close();
+                cn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
         private void ViewAnnouncement_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

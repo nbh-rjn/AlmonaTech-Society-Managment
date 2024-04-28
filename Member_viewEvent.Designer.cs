@@ -84,6 +84,7 @@
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.Name = "Member_viewEvent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Member_viewEvent";
             this.Load += new System.EventHandler(this.Member_viewEvent_Load);
             this.panel2.ResumeLayout(false);

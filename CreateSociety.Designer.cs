@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labellck = new System.Windows.Forms.Label();
+            this.MentorID = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.sname = new System.Windows.Forms.RichTextBox();
             this.add_event_btn = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.desc = new System.Windows.Forms.RichTextBox();
-            this.labellck = new System.Windows.Forms.Label();
-            this.MentorID = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(528, 524);
             this.panel1.TabIndex = 17;
+            // 
+            // labellck
+            // 
+            this.labellck.AutoSize = true;
+            this.labellck.BackColor = System.Drawing.Color.Transparent;
+            this.labellck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labellck.ForeColor = System.Drawing.Color.White;
+            this.labellck.Location = new System.Drawing.Point(37, 223);
+            this.labellck.Name = "labellck";
+            this.labellck.Size = new System.Drawing.Size(83, 20);
+            this.labellck.TabIndex = 15;
+            this.labellck.Text = "Mentor ID";
+            this.labellck.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // MentorID
+            // 
+            this.MentorID.Location = new System.Drawing.Point(170, 223);
+            this.MentorID.Name = "MentorID";
+            this.MentorID.Size = new System.Drawing.Size(270, 31);
+            this.MentorID.TabIndex = 14;
+            this.MentorID.Text = "";
             // 
             // label4
             // 
@@ -124,27 +145,6 @@
             this.desc.TabIndex = 4;
             this.desc.Text = "";
             // 
-            // labellck
-            // 
-            this.labellck.AutoSize = true;
-            this.labellck.BackColor = System.Drawing.Color.Transparent;
-            this.labellck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labellck.ForeColor = System.Drawing.Color.White;
-            this.labellck.Location = new System.Drawing.Point(37, 223);
-            this.labellck.Name = "labellck";
-            this.labellck.Size = new System.Drawing.Size(83, 20);
-            this.labellck.TabIndex = 15;
-            this.labellck.Text = "Mentor ID";
-            this.labellck.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // MentorID
-            // 
-            this.MentorID.Location = new System.Drawing.Point(170, 223);
-            this.MentorID.Name = "MentorID";
-            this.MentorID.Size = new System.Drawing.Size(270, 31);
-            this.MentorID.TabIndex = 14;
-            this.MentorID.Text = "";
-            // 
             // CreateSociety
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -156,6 +156,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Name = "CreateSociety";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Society";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);

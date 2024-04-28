@@ -22,8 +22,8 @@ namespace AlmonaTech_Society_Managment
 
         public int userid;
 
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-      //  public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        //public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
        
         public viewsociety_membercs()
         {
@@ -51,11 +51,9 @@ namespace AlmonaTech_Society_Managment
                 // Open connection
 
                 cn.Open();
-                string q = "select * from Society";
+                string q = "SELECT societyID, sname AS 'Society', description_ AS 'About Us' FROM Society";
 
                 SqlCommand cmd = new SqlCommand(q, cn);
-
-
 
 
                 // Use SqlDataAdapter to fill the DataTable
@@ -75,7 +73,7 @@ namespace AlmonaTech_Society_Managment
 
                 // Bind the DataTable to the DataGridView
                 societytable.DataSource = dataTable;
-
+                societytable.Columns["societyID"].Visible = false;
 
                 cn.Close();
 
@@ -93,12 +91,12 @@ namespace AlmonaTech_Society_Managment
                 // Retrieve data from the clicked row
                 DataGridViewRow clickedRow = societytable.Rows[e.RowIndex];
                 int societyID = Convert.ToInt32(clickedRow.Cells["societyID"].Value);
-                string sname = Convert.ToString(clickedRow.Cells["sname"].Value);
+                //string sname = Convert.ToString(clickedRow.Cells["sname"].Value);
                 string status = "Requested";
 
                 // Insert data into the member_ table
                 string q = "insert into memberRequest (userID,societyID, status_) values (@uid,@societyID,@status)";
-
+                
                 using (cn)
                 {
                     cn.Open();

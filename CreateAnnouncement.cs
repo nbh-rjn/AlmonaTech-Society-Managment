@@ -15,7 +15,9 @@ namespace AlmonaTech_Society_Managment
     {
         public int uid;
         public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-  
+        //public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+
+
         SqlConnection cn = new SqlConnection();
         SqlCommand command = new SqlCommand();
         SqlDataReader dr;
@@ -46,9 +48,9 @@ namespace AlmonaTech_Society_Managment
             string announcementDesc = desc.Text;
 
             // Insert the content into the announcement table
-            string query = "INSERT INTO anncement (announcementDesc) VALUES (@announcementDesc)";
+            string query = "INSERT INTO announcement (announcementDesc) VALUES (@announcementDesc)";
 
-            using (SqlConnection connection = new SqlConnection("Your_Connection_String_Here"))
+            using (SqlConnection connection = new SqlConnection(conn))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {

@@ -79,7 +79,7 @@ namespace AlmonaTech_Society_Managment
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ApproveMember approveMember= new ApproveMember();
+            ApproveMember approveMember= new ApproveMember(uid);
             approveMember.Show();
         }
 

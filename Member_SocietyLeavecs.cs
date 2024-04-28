@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace AlmonaTech_Society_Managment
 {
@@ -21,6 +22,7 @@ namespace AlmonaTech_Society_Managment
         SqlDataReader dr;
 
 
+        //public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
 
         public Member_SocietyLeavecs()
@@ -47,10 +49,11 @@ namespace AlmonaTech_Society_Managment
                 // Open connection
 
                 cn.Open();
-                string q = "select * from member_ where status_='Approved'";
+                string q = "select s.sname AS 'Society' from memberRequest mr JOIN Society s ON mr.societyID = s.societyID where mr.status_='Approved' and mr.userID = @userID";
 
                 SqlCommand cmd = new SqlCommand(q, cn);
 
+                cmd.Parameters.AddWithValue("@userID", userID);
 
 
 

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.Diagnostics;
 
 namespace AlmonaTech_Society_Managment
 {
@@ -19,8 +20,8 @@ namespace AlmonaTech_Society_Managment
         SqlCommand command = new SqlCommand();
         SqlDataReader dr;
 
-        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-       // public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        //public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public int uid;
         public ApproveMember()
         {
@@ -35,48 +36,45 @@ namespace AlmonaTech_Society_Managment
             InitializeComponent();
             this.Icon = Properties.Resources.logo_ico;
             cn = new SqlConnection(conn);
-            SocietyGridView();
+            
             this.uid = uid;
+            Debug.WriteLine("uid: " + uid);
+            Debug.WriteLine("this.uid: " + this.uid);
+
+            SocietyGridView();
         }
         public void SocietyGridView()
         {
 
-            try
+            cn.Open();
+            string q = "SELECT DISTINCT u.fname + ' ' + u.lname AS 'Applicant', s.sname AS 'Society'\r\nFROM memberRequest mr\r\nJOIN User_ u ON mr.userID = u.userID\r\nJOIN Society s ON mr.societyID = s.societyID\r\nWHERE s.leadID = @uid;";
+            
+            SqlCommand cmd = new SqlCommand(q, cn);
+            cmd.Parameters.AddWithValue("@uid", uid);
+            Debug.WriteLine("uid: " + uid);
+
+            // Use SqlDataAdapter to fill the DataTable
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+
+
+            // Create a DataTable to hold the data
+            System.Data.DataTable dataTable = new System.Data.DataTable();
+
+            // Use a DataAdapter to fill the DataTable
+            using (adapter)
             {
-                // Open connection
-
-                cn.Open();
-                string q = "select * from member_ where status_='Requested'";
-
-                SqlCommand cmd = new SqlCommand(q, cn);
-
-
-                // Use SqlDataAdapter to fill the DataTable
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-
-
-                // Create a DataTable to hold the data
-                System.Data.DataTable dataTable = new System.Data.DataTable();
-
-                // Use a DataAdapter to fill the DataTable
-                using (adapter)
-                {
-                    adapter.Fill(dataTable);
-                }
-
-                // Bind the DataTable to the DataGridView
-                societytable.DataSource = dataTable;
-
-
-                cn.Close();
-
+                adapter.Fill(dataTable);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("No requests");
-            }
+
+            // Bind the DataTable to the DataGridView
+            societytable.DataSource = dataTable;
+
+
+            cn.Close();
+
+      
         }
 
         private void societytable_CellContentClick(object sender, DataGridViewCellEventArgs e)

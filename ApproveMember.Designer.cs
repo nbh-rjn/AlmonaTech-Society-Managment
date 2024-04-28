@@ -94,6 +94,7 @@
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.Name = "ApproveMember";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ApproveMember";
             this.Load += new System.EventHandler(this.ApproveMember_Load);
             this.panel2.ResumeLayout(false);
