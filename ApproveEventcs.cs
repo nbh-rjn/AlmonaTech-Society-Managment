@@ -21,8 +21,8 @@ namespace AlmonaTech_Society_Managment
         SqlDataReader dr;
 
 
-        public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
-        //public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+       // public string conn = "Data Source=HOME\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
+        public string conn = "Data Source=DESKTOP-67QKUHG\\SQLEXPRESS;Initial Catalog=societydb;Integrated Security=True";
         public ApproveEventcs()
         {
             InitializeComponent();
@@ -77,8 +77,45 @@ namespace AlmonaTech_Society_Managment
 
         private void approveEventGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == approveEventGrid.Columns["Approve"].Index && e.RowIndex != -1)
+            {
+                // Retrieve data from the clicked row
+                int eventID = Convert.ToInt32(approveEventGrid.Rows[e.RowIndex].Cells["eventID"].Value);
 
+                // Implement logic to approve the event and update its status in the database
+                try
+                {
+                    // Open connection
+                    using (SqlConnection connection = new SqlConnection(conn))
+                    {
+                        connection.Open();
+
+                        // Update status to "Approved" in the events_ table
+                        string updateQuery = "UPDATE events_ SET status_ = 'Approved' WHERE eventID = @eventID";
+
+                        using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                        {
+                            command.Parameters.AddWithValue("@eventID", eventID);
+                            command.ExecuteNonQuery();
+                        }
+
+                        // Close connection
+                        connection.Close();
+                    }
+
+                    // Refresh the DataGridView to reflect the updated status
+                    EventGridView();
+
+                    MessageBox.Show("Event approved successfully.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error approving event: " + ex.Message);
+                }
+            }
         }
+
+
 
         private void ApproveEventcs_Load(object sender, EventArgs e)
         {
@@ -102,6 +139,11 @@ namespace AlmonaTech_Society_Managment
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
             this.Hide();
+        }
+
+        private void ApproveEventcs_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
